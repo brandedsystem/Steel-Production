@@ -6,7 +6,7 @@
 
 body {
     padding-top: 56px;
-    background: linear-gradient(to right, rgba(18, 73, 95, 0.7), rgba(14, 54, 100, 0.7));
+
     /* Adjusted for the fixed navbar height */
     scroll-behavior: smooth;
 }
@@ -15,7 +15,7 @@ body {
 
 /* Custom styles for the navbar */
 .navbar {
-    background-color: rgba(1, 55, 204, 0.795) !important;
+    background-color: rgba(140, 1, 204, 0.795) !important;
     /* Navbar background color */
     padding-top: 5px;
     padding-bottom: 5px;
@@ -67,26 +67,66 @@ body {
 
 /***** Body *****/
 #contactus {
-    background-color: #b1128e;
+    padding: 10px;
+    background-color: rgba(132, 31, 226, 0.87);
     color: white;
+    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';   
 
+}
+
+.container-section {
+    border: #000000 2px solid;
+    box-shadow: 0 0 10px rgba(12, 12, 12, 0.7);
+    border-radius: 20px;
+}
+
+
+/***** End Body *****/
+
+.heading {
+    width: 100%;
+    height: 150px;    
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.heading h2 {
+    font-weight: bold;
+    font-size: 48px;
+    padding: 10px;
+    line-height: 140px;
+}
+
+.text-cont {
+    padding: 10px;
+}
+
+
+
+
+/***** Form-Contact *****/
+.section-con {
+    border-left: #000000 10px solid;
+    border-radius: 20px;
 }
 
 .contact-head-section {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 15px;
 
 }
 
 .con-image {
     display: flex;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     border: 1px solid black;
     border-radius: 50%;
     background-color: #45a049;
-    box-shadow: 7px 7px 5px 3px rgba(10, 36, 151, 0.7);
+   
 }
 
 .con-image img {
@@ -94,61 +134,70 @@ body {
     height: 100%;
     object-fit: fill;
     object-position: center;
+    
 
 }
 
+form {
+    padding-bottom: 10px;
+    border-left-color: #000000 2px solid;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+
 .form-body-section {
-    padding-bottom: 40px;
+    
     border-radius: 20px;
 }
 
-.heading {
+.contain-contact {
+
     width: 100%;
-    height: 100%;
-    border: 1px solid red;     
-    padding: 20px;
+    position: relative;
+    display: flex;
+    height: 100px;
+
 }
 
 
-.heading h2 {
-    font-weight: bold;
-    font-size: 48px;
-}
-
-.txt1 {
+.txt {
     width: 100%;
-    height: 30px;
+    height: 40px;
     border: none;
+    border-radius: 20px !important;
     border-bottom: 2px solid black;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     background: transparent;
     outline: none;
 
 }
 
-.lbl {
-    font-style: italic;
-    font-family: 'Cambria, Cochin', 'Georgia, Times', 'Times New Roman', serif;
-    color: #000000;
+.lbl {  
+     
     font-size: large;
-
+    margin-bottom: 10px;
 }
 
-textarea {
+.txtbox {
     width: 100%;
     height: 100px;
     border: none;
     border-bottom: 2px solid black;
-    margin-top: 10px;
+    margin-bottom: 10px;
     background: transparent;
     outline: none;
     scroll-behavior: auto;
     overflow: scroll;
+    
 
 }
 
 .form-body-section .btn {
     border-radius: 10px;
+    margin-top: 20px;
 }
 
 .form-body-section .btn:hover {
@@ -156,50 +205,7 @@ textarea {
     color: white;
 }
 
-/***** End Body *****/
 
 
-
-
-
-/***** Form-Contact *****/
-
-form {
-
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: transparent;
-    outline: none;
-}
-
-button {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
 
 /***** End Form-Contact *****/
