@@ -6,101 +6,55 @@
 
 body {
     padding-top: 56px;
-
+    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
     /* Adjusted for the fixed navbar height */
     scroll-behavior: smooth;
 }
-
-/***** Heading Or Navbaar  *****/
-
-/* Custom styles for the navbar */
-.navbar {
-    background-color: rgba(140, 1, 204, 0.795) !important;
-    /* Navbar background color */
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
-    /* Navbar brand font size */
-}
-
-.navbar-brand:hover {
-
-    font-style: italic;
-    transition: ease-in-out 2s;
-
-    color: red;
-    /* Navbar brand font size */
-}
-
-
-.navbar-toggler {
-    border: none;
-    /* Remove border for a cleaner look */
-}
-
-.navbar-toggler-icon {
-    background-color: transparent;
-    /* Color of the toggler icon */
-}
-
-.navbar-nav .nav-item {
-    margin-right: 10px;
-}
-
-.navbar-nav .nav-link {
-    color: #ffffff;
-    /* Navbar link color */
-    font-weight: bold;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #ff0000;
-    transition: ease-in-out 2s;
-    /* Navbar link color on hover */
-}
-
 
 /***** End Heading Or Navbaar  *****/
 
 /***** Body *****/
 #contactus {
     padding: 10px;
-    background-color: rgba(132, 31, 226, 0.87);
-    color: white;
-    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';   
 
 }
 
-.container-section {
-    border: #000000 2px solid;
-    box-shadow: 0 0 10px rgba(12, 12, 12, 0.7);
-    border-radius: 20px;
+.container-section {      
+    border-radius: 20px;    
 }
 
-
+.con-contain {
+    display: block;
+    position: relative;    
+    border-right: 1px solid black;
+    
+}
 /***** End Body *****/
 
 .heading {
     width: 100%;
-    height: 150px;    
+    height: 70px;
     display: flex;
     padding: 0;
     margin: 0;
-    justify-content: center;
+    justify-content: start;
 }
 
 .heading h2 {
     font-weight: bold;
-    font-size: 48px;
-    padding: 10px;
-    line-height: 140px;
+    font-size: 25px;
+    padding: 5px;
+    line-height: 80px;
+    margin: 0;
 }
 
-.text-cont {
-    padding: 10px;
+.query-txt {
+    font-size: 14px;
+}
+
+.text-cont h4 {
+    font-style: normal;
+    font-size: 20px;
 }
 
 
@@ -108,48 +62,24 @@ body {
 
 /***** Form-Contact *****/
 .section-con {
-    border-left: #000000 10px solid;
-    border-radius: 20px;
-}
-
-.contact-head-section {
     display: flex;
-    justify-content: space-around;
-    padding: 15px;
-
-}
-
-.con-image {
-    display: flex;
-    height: 100px;
-    width: 100px;
-    border: 1px solid black;
-    border-radius: 50%;
-    background-color: #45a049;
-   
-}
-
-.con-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    object-position: center;
-    
+    position: relative;    
+    border-radius: 10px;
+    padding: 10px;
 
 }
 
 form {
-    padding-bottom: 10px;
-    border-left-color: #000000 2px solid;
-    margin-bottom: 20px;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    width: 80%;    
+    padding: 20px;
+    background-color: rgb(231, 221, 221);
+    border-radius: 10px;
+    
 }
 
 
 .form-body-section {
-    
+
     border-radius: 20px;
 }
 
@@ -175,8 +105,8 @@ form {
 
 }
 
-.lbl {  
-     
+.lbl {
+
     font-size: large;
     margin-bottom: 10px;
 }
@@ -191,7 +121,7 @@ form {
     outline: none;
     scroll-behavior: auto;
     overflow: scroll;
-    
+
 
 }
 
@@ -209,3 +139,9 @@ form {
 
 
 /***** End Form-Contact *****/
+
+/***** Footer *****/ 
+
+
+
+/***** End Footer *****/
