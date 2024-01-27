@@ -174,8 +174,7 @@ body {
     overflow: hidden;
     animation-name: typing;
     animation-duration: 5s;
-    animation: typing 3s steps(28),
-        cursor .4s step-end infinite alternate;
+    
 
 }
 
