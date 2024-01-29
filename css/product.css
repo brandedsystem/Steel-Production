@@ -77,6 +77,7 @@ body {
 /***** End Slider  *****/
 
 .product-section1 {
+    
     height: 600px;
     position: relative;
     border-top: 2px solid black;
@@ -86,7 +87,7 @@ body {
 /***** Left side product list *****/
 
 .product-item-list {
-
+    border: 5px solid blue;
     margin: 0;
     padding: 0px !important;
     overflow-y: scroll;
@@ -158,12 +159,12 @@ body {
 
 /***** right side product details *****/
 
-.product-item-details {    
+.product-item-details {
     margin: 0;
     padding: 0px !important;
     width: 100%;
-    
     position: relative;
+    border: 5px solid blue !important;
 }
 
 .home-section-product {
@@ -185,7 +186,7 @@ body {
     color: black;
     text-transform: uppercase;
     border-bottom: 2px solid black;
-   
+
 
 }
 
@@ -208,8 +209,8 @@ body {
 .custom-card {
     max-width: 200px;
     margin: 20px;
-    position: relative; 
-    
+    position: relative;
+
 
 }
 
@@ -217,6 +218,67 @@ body {
 .custom-card img {
     width: 100%;
     height: auto;
+}
+
+.custom-card img:hover {
+    filter: blur(1px);
+}
+
+.view-btn {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    display: none;
+    /* Initially hidden */
+    transition: opacity 0.3s ease;
+    /* Add transition for smooth fade-in effect */
+}
+
+/* Show button on image hover */
+.custom-card:hover .view-btn {
+    display: block;
+    opacity: 1;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.modal-img {
+    width: 100%;
+    height: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
 }
 
 

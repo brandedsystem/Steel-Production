@@ -95,6 +95,66 @@
         </div>
     </section>
 
+    <section id="product-type" class="container-fluid">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="pro-type-img">
+                    <a target="_blank" href="./Images/varcasproductphoto/flange-types.png">
+                        <img src="./Images/varcasproductphoto/flange-types.png" alt="Type of Steel Product">
+                        <button class="view-btn"
+                            onclick="openModal('./Images/varcasproductphoto/flange-types.png')">View Image</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="pro-details-img">
+                    <a target="_blank" href="./Images/varcasproductphoto/puddle-flange-specification.gif">
+                        <img src="./Images/varcasproductphoto/puddle-flange-specification.gif"
+                            alt="Type of Steel Product">
+                        <button class="view-btn"
+                            onclick="openModal('./Images/varcasproductphoto/puddle-flange-specification.gif')">View
+                            Image</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal">&times;</span>
+            <img class="modal-img" src="" alt="Viewed Image" id="viewedImage">
+        </div>
+    </div>
+
+    <script>
+        function openModal(imageSrc) {
+            const modal = document.getElementById('myModal');
+            const modalImg = document.getElementById('viewedImage');
+
+            // Set the image source
+            modalImg.src = imageSrc;
+
+            // Display the modal
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('myModal');
+
+            // Close the modal
+            modal.style.display = 'none';
+        }
+
+        // Close the modal if clicked outside of the image
+        window.onclick = function (event) {
+            const modal = document.getElementById('myModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        };
+    </script>
+
+
 
     <!-- Fixed Footer -->
     <footer id="footer">
@@ -147,13 +207,16 @@
                     <div>
                         <ul class="footer-list">
                             <li class="nav-item1">
-                                <a class="nav-link1" href="#">1</a>
+                                <div class="lbl-name"><h5>Name :</h5></div>
+                                <a class="nav-link1" href="#">VINOD BOKADIA</a>
                             </li>
                             <li class="nav-item1">
-                                <a class="nav-link1" href="#">2</a>
+                                <div class="lbl-name"><h5>Mobile :</h5></div>
+                                <a class="nav-link1" href="#">+91 9619158558</a>
                             </li>
                             <li class="nav-item1">
-                                <a class="nav-link1" href="#">3</a>
+                                <div class="lbl-name"><h5>Email :</h5></div>
+                                <a class="nav-link1" href="#">info@varcasstainless.com</a>
                             </li>
                         </ul>
                     </div>

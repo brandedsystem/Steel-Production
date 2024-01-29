@@ -152,6 +152,7 @@ body {
 
 #welcome {
     padding: 80px 0;
+    border: 5px solid black;
 }
 
 
@@ -174,7 +175,7 @@ body {
     overflow: hidden;
     animation-name: typing;
     animation-duration: 5s;
-    
+
 
 }
 
@@ -185,12 +186,115 @@ body {
     /* Set your desired text color */
 }
 
+/***** Product type images *****/
+
+
+#product-type {
+    width: 100%;    
+    position: relative;
+    border: 5px solid black;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.pro-type-img,
+.pro-details-img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    transition: filter 0.3s ease;
+}
+
+.pro-type-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.pro-details-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.pro-type-img:hover img,
+.pro-details-img:hover img {
+    filter: blur(1px);
+}
+
+.pro-type-img .view-btn,
+.pro-details-img .view-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    display: none;
+    /* Initially hidden */
+    transition: opacity 0.3s ease;
+    /* Add transition for smooth fade-in effect */
+}
+
+/* Show button on image hover */
+.pro-type-img:hover .view-btn,
+.pro-details-img:hover .view-btn {
+    display: block;
+    opacity: 1;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.modal-img {
+    width: 100%;
+    height: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+}
+
+/***** End Product type images *****/
+
 
 
 
 /***** End Welcome section *****/
 
-footer {
+#footer {
     background-color: rgb(37, 33, 33);
     /* Footer background color */
     color: white;
@@ -199,6 +303,7 @@ footer {
     bottom: 0;
     width: 100%;
     font-style: italic;
+    position: relative;
 }
 
 .heading-footer {

@@ -9,6 +9,7 @@ body {
     font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
     /* Adjusted for the fixed navbar height */
     scroll-behavior: smooth;
+    
 }
 
 /***** End Heading Or Navbaar  *****/
@@ -16,6 +17,7 @@ body {
 /***** Body *****/
 #contactus {
     padding: 10px;
+    background-color: rgba(243, 243, 243, 0.897);
 
 }
 
