@@ -11,11 +11,7 @@ body {
     scroll-behavior: smooth;
 }
 
-#contactus {
-    padding: 10px;
-    position: relative;
 
-}
 
 /***** Slider  *****/
 
@@ -75,24 +71,35 @@ body {
 
 
 /***** End Slider  *****/
+#products {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    position: relative;
+    height: 600px;
+    position: relative;
+    border: 5px solid rgb(0, 0, 0);
+    padding: 0 !important;
+
+}
+
 
 .product-section1 {
-    
-    height: 600px;
     position: relative;
     border-top: 2px solid black;
     padding: 0 !important;
+    height: 100%;
+    width: 100%;
 }
 
 /***** Left side product list *****/
 
 .product-item-list {
-    border: 5px solid blue;
+    width: 100%;
     margin: 0;
     padding: 0px !important;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    height: 600px;
+    height: 100%;
 
 }
 
@@ -159,22 +166,62 @@ body {
 
 /***** right side product details *****/
 
+
 .product-item-details {
+    display: block;
     margin: 0;
     padding: 0px !important;
     width: 100%;
+    height: 100%;
     position: relative;
-    border: 5px solid blue !important;
+    border-left: 5px solid black;
+
 }
 
 .home-section-product {
     margin: 0;
     padding: 0px;
-    position: relative;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    height: 600px;
+    width: 100%;
+    height: 100%;
+
 }
+
+
+.heading-product {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    background-color: rgba(238, 232, 232, 0.795);
+    color: black;
+    text-transform: uppercase;
+
+}
+
+.heading-product h1 {
+    text-align: center;
+    line-height: normal;
+
+}
+
+.product-item-list-contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    overflow-y: scroll;
+    z-index: 1;
+    scroll-behavior: smooth;
+}
+
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 
 .heading-product {
     position: relative;
@@ -199,17 +246,21 @@ body {
 .product-item-list-contain {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
+    justify-content: space-around;
+    align-items: stretch;
+    margin-top: 20px;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    overflow-wrap: normal;
+
 }
 
 .custom-card {
     max-width: 200px;
     margin: 20px;
     position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 
 }
@@ -295,50 +346,57 @@ body {
 
 
 
-.product-item-details {
-    border: 1px solid red;
-    margin: 0;
-    padding: 0px;
+/***** 3 Products showing deatails *****/
+
+#pro-3 {
+    position: relative !important;
+    background-color: rgba(231, 221, 221, 0.918);
+    border-color: 2px solid black !important;
+    display: flex;
+    justify-content: center;
+
+}
+
+.card-pro {
+    background-color: darkgray;
+    z-index: -1;
+    width: 60%;
+    height: 80%;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.card-pro .img-pro {
     width: 100%;
-    height: 600px;
+    height: 50%;
+    overflow: hidden;
 }
 
-.home-section-product {
-    margin: 0;
-    padding: 0px;
+.card-pro .img-pro img {
     position: relative;
-
-}
-
-
-.heading-product {
-    position: relative;
-    display: flex;
-    justify-content: center;
     width: 100%;
-    margin: 0;
-    background-color: rgba(238, 232, 232, 0.795);
-    color: black;
-    text-transform: uppercase;
-
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
-.heading-product h1 {
-    text-align: center;
-    line-height: normal;
-
+.card-pro .img-pro img:hover {
+    filter: blur(1px);
 }
 
-.product-item-list-contain {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
+.card-pro .img-pro>.view-btn1 {
+    background-color: #007bff;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
 }
 
-
-.pagination-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+.card-pro .img-pro img:hover>.view-btn1 {
+    opacity: 1;
+    display: block;
 }
+
+/***** End 3 Products showing deatails *****/
