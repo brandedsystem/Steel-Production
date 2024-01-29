@@ -47,7 +47,7 @@
         </nav>
     </header>
     <section id="products">
-
+        <!--
         <div class="Slider-pro container-fluid">
             <div id="imageSlider-pro" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -59,7 +59,7 @@
                             alt="Image 2">
                     </div>
                 </div>
-                <!-- Slider Controls -->
+               
                 <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider-pro"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -72,7 +72,7 @@
                 </button>
             </div>
         </div>
-        <!--
+ 
         <div class="container-fluid">
             <div class="product-type">
                 <a target="_blank" href="./Images/varcasproductphoto/flange-types.png">
@@ -87,150 +87,159 @@
         </div>-->
         <div class="container-fluid mt-1 product-section1">
             <div class="row m-0 p-0">
-                <div class="col-md-3 product-item-list">
+                <div class="col-md-4 product-item-list">
                     <div class="heading-product-list">
                         <h1>Product List </h1>
                     </div>
-                    <div class="category" id="category1">
-                        <div class="category-header" onclick="toggleCategory('category1')">
-                            Stainless Steel Pipe Seamless
-                            <span class="collapsible-icon">+</span>
+                    <div class="cat-section">
+                        <div class="category" id="category1">
+                            <div class="category-header" onclick="toggleCategory('category1')">
+                                Stainless Steel Pipe Seamless
+                                <span class="collapsible-icon">+</span>
+                            </div>
+                            <div class="category-content">
+                                <div class="product-item">Welded</div>
+                                <div class="product-item">Buttweld</div>
+                                <div class="product-item">Socket weld</div>
+                                <div class="product-item">Threaded</div>
+                                <div class="product-item">Ferrule</div>
+                                <div class="product-item">Pneumatic</div>
+                                <div class="product-item">weldolet</div>
+                                <div class="product-item">threadole</div>
+                            </div>
                         </div>
-                        <div class="category-content">
-                            <div class="product-item">Welded</div>
+                        <div class="category" id="category2">
+                            <div class="category-header" onclick="toggleCategory('category2')">
+                                Stainless Steel Flanges
+                                <span class="collapsible-icon">+</span>
+                            </div>
+                            <div class="category-content">
+                                <div class="product-item">Slip on Flanges</div>
+                                <div class="product-item">Weld Neck flanges</div>
+                                <div class="product-item">Blind Flanges</div>
+                                <div class="product-item">Spectacle Blind Flanges</div>
+                                <div class="product-item">Orifice Flanges</div>
+                                <div class="product-item">Threaded Flanges</div>
+                                <div class="product-item">Socket Weld Flanges</div>
+                                <div class="product-item">Flat Flanges</div>
+                                <div class="product-item">High Hub Flanges</div>
+                                <div class="product-item">Groove and Tongue Flange</div>
+                                <div class="product-item">Square Flange</div>
+                                <div class="product-item">Ring Type Joint Flange</div>
+                                <div class="product-item">Loose Flange</div>
+                                <div class="product-item">Expander Flange</div>
+                                <div class="product-item">Nipo Flange</div>
+                                <div class="product-item">Plate Flange</div>
+                                <div class="product-item">Lap Joint Flange</div>
+                                <div class="product-item">Weldo Flange</div>
+                                <div class="product-item">Flange Olet</div>
+                                <div class="product-item">Bleed Ring Flange</div>
+                                <div class="product-item">Forged Flange</div>
+                                <div class="product-item">Raised Flange</div>
+                                <div class="product-item">Male Female Flange</div>
+                                <div class="product-item">Ring Spacers Flange</div>
+                                <div class="product-item">Flange Adapter</div>
+                                <div class="product-item">Non Standard Flange</div>
+                                <div class="product-item">Spade Flange</div>
+                                <div class="product-item">Hydraulic SAE</div>
+                                <div class="product-item">Opening Flange</div>
+                            </div>
+                        </div>
+                        <div class="category" id="category3">
+                            <div class="category-header" onclick="toggleCategory('category3')">
+                                Pipe Fitting
+                                <span class="collapsible-icon">+</span>
+                            </div>
+                            <div class="category-content">
+                                <div class="product-item">Equal Tee</div>
+                                <div class="product-item">Unequal Tee</div>
+                                <div class="product-item">Reducing Tee</div>
+                                <div class="product-item">Equal Cross</div>
+                                <div class="product-item">Unequal Cross</div>
+                                <div class="product-item">Reducing Cross</div>
+                                <div class="product-item">Reducers</div>
+                                <div class="product-item">Concentric Reducer</div>
+                                <div class="product-item">Eccentric Reducer</div>
+                                <div class="product-item">Stub Ends</div>
+                                <div class="product-item">Lap Joint Stub Ends</div>
+                                <div class="product-item">Long Stubend</div>
+                                <div class="product-item">Short Stubend</div>
+                                <div class="product-item">Pipe Cap</div>
+                                <div class="product-item">End Cap</div>
+                                <div class="product-item">Collar</div>
+                                <div class="product-item">Swedge Nipple</div>
+                                <div class="product-item">Pipe Nipples</div>
+                                <div class="product-item">Barrel Nipple</div>
+                                <div class="product-item">Reducing Nipple</div>
+                                <div class="product-item">Bend</div>
+                                <div class="product-item">Long Radius Bend</div>
+                                <div class="product-item">Piggable Bend</div>
+                                <div class="product-item">Reducing Elbow</div>
+                                <div class="product-item">90° Long Radius Elbow</div>
+                                <div class="product-item">90° Short Radius Elbow</div>
+                                <div class="product-item">45° Long Radius Elbow</div>
+                                <div class="product-item">45° Short Radius Elbow</div>
+                                <div class="product-item">180° Long Radius Elbow</div>
+                                <div class="product-item">180° Short Radius Elbow</div>
+                                <div class="product-item">Seamless Buttwelding 45° and 90° Elbows</div>
+                                <div class="product-item">Welded Elbows</div>
+                                <div class="product-item">Seamless Buttwelding 180° Returns</div>
+                                <div class="product-item">LR Elbow & LR Return / U Bend</div>
+                                <div class="product-item">SR Elbow & SR Return / U Bend</div>
+                                <div class="product-item">Straight Tees and Crosses</div>
+                                <div class="product-item">Reducing Outlet Tees and Reducing Outlet Crosses</div>
+                                <div class="product-item">Lateral Tee</div>
+                                <div class="product-item">Cushion Tee</div>
+                                <div class="product-item">Split Tees</div>
+                                <div class="product-item">Target Tee</div>
+                                <div class="product-item">Split Tee</div>
+                                <div class="product-item">Dish Ends</div>
+                                <div class="product-item">Return 180° Elbow</div>
+                                <div class="product-item">Wye tee/Lateral</div>
+                                <div class="product-item">Adaptor</div>
+                                <div class="product-item">Stand Pipe Adaptor</div>
+                                <div class="product-item">Socket</div>
 
+                            </div>
                         </div>
-                    </div>
-                    <div class="category" id="category2">
-                        <div class="category-header" onclick="toggleCategory('category2')">
-                            Stainless Steel Flanges
-                            <span class="collapsible-icon">+</span>
-                        </div>
-                        <div class="category-content">
-                            <div class="product-item">Slip on Flanges</div>
-                            <div class="product-item">Weld Neck flanges</div>
-                            <div class="product-item">Blind Flanges</div>
-                            <div class="product-item">Spectacle Blind Flanges</div>
-                            <div class="product-item">Orifice Flanges</div>
-                            <div class="product-item">Threaded Flanges</div>
-                            <div class="product-item">Socket Weld Flanges</div>
-                            <div class="product-item">Flat Flanges</div>
-                            <div class="product-item">High Hub Flanges</div>
-                            <div class="product-item">Groove and Tongue Flange</div>
-                            <div class="product-item">Square Flange</div>
-                            <div class="product-item">Ring Type Joint Flange</div>
-                            <div class="product-item">Loose Flange</div>
-                            <div class="product-item">Expander Flange</div>
-                            <div class="product-item">Nipo Flange</div>
-                            <div class="product-item">Plate Flange</div>
-                            <div class="product-item">Lap Joint Flange</div>
-                            <div class="product-item">Weldo Flange</div>
-                            <div class="product-item">Flange Olet</div>
-                            <div class="product-item">Bleed Ring Flange</div>
-                            <div class="product-item">Forged Flange</div>
-                            <div class="product-item">Raised Flange</div>
-                            <div class="product-item">Male Female Flange</div>
-                            <div class="product-item">Ring Spacers Flange</div>
-                            <div class="product-item">Flange Adapter</div>
-                            <div class="product-item">Non Standard Flange</div>
-                            <div class="product-item">Spade Flange</div>
-                            <div class="product-item">Hydraulic SAE</div>
-                            <div class="product-item">Opening Flange</div>
-                        </div>
-                    </div>
-                    <div class="category" id="category3">
-                        <div class="category-header" onclick="toggleCategory('category3')">
-                            Pipe Fitting
-                            <span class="collapsible-icon">+</span>
-                        </div>
-                        <div class="category-content">
-                            <div class="product-item">Equal Tee</div>
-                            <div class="product-item">Unequal Tee</div>
-                            <div class="product-item">Reducing Tee</div>
-                            <div class="product-item">Equal Cross</div>
-                            <div class="product-item">Unequal Cross</div>
-                            <div class="product-item">Reducing Cross</div>
-                            <div class="product-item">Reducers</div>
-                            <div class="product-item">Concentric Reducer</div>
-                            <div class="product-item">Eccentric Reducer</div>
-                            <div class="product-item">Stub Ends</div>
-                            <div class="product-item">Lap Joint Stub Ends</div>
-                            <div class="product-item">Long Stubend</div>
-                            <div class="product-item">Short Stubend</div>
-                            <div class="product-item">Pipe Cap</div>
-                            <div class="product-item">End Cap</div>
-                            <div class="product-item">Collar</div>
-                            <div class="product-item">Swedge Nipple</div>
-                            <div class="product-item">Pipe Nipples</div>
-                            <div class="product-item">Barrel Nipple</div>
-                            <div class="product-item">Reducing Nipple</div>
-                            <div class="product-item">Bend</div>
-                            <div class="product-item">Long Radius Bend</div>
-                            <div class="product-item">Piggable Bend</div>
-                            <div class="product-item">Reducing Elbow</div>
-                            <div class="product-item">90° Long Radius Elbow</div>
-                            <div class="product-item">90° Short Radius Elbow</div>
-                            <div class="product-item">45° Long Radius Elbow</div>
-                            <div class="product-item">45° Short Radius Elbow</div>
-                            <div class="product-item">180° Long Radius Elbow</div>
-                            <div class="product-item">180° Short Radius Elbow</div>
-                            <div class="product-item">Seamless Buttwelding 45° and 90° Elbows</div>
-                            <div class="product-item">Welded Elbows</div>
-                            <div class="product-item">Seamless Buttwelding 180° Returns</div>
-                            <div class="product-item">LR Elbow & LR Return / U Bend</div>
-                            <div class="product-item">SR Elbow & SR Return / U Bend</div>
-                            <div class="product-item">Straight Tees and Crosses</div>
-                            <div class="product-item">Reducing Outlet Tees and Reducing Outlet Crosses</div>
-                            <div class="product-item">Lateral Tee</div>
-                            <div class="product-item">Cushion Tee</div>
-                            <div class="product-item">Split Tees</div>
-                            <div class="product-item">Target Tee</div>
-                            <div class="product-item">Split Tee</div>
-                            <div class="product-item">Dish Ends</div>
-                            <div class="product-item">Return 180° Elbow</div>
-                            <div class="product-item">Wye tee/Lateral</div>
-                            <div class="product-item">Adaptor</div>
-                            <div class="product-item">Stand Pipe Adaptor</div>
-                            <div class="product-item">Socket</div>
 
+                        <div class="category" id="category4">
+                            <div class="category-header" onclick="toggleCategory('category4')">
+                                Stainless Steel Flat
+                                <span class="collapsible-icon">+</span>
+                            </div>
+                            <div class="category-content">
+                                <div class="product-item">Angel</div>
+                                <div class="product-item">Channel</div>
+
+                            </div>
+                        </div>
+                        <div class="category" id="category5">
+                            <div class="category-header" onclick="toggleCategory('category5')">
+                                Stainless Steel Round Bar
+                                <span class="collapsible-icon">+</span>
+                            </div>
+                            <div class="category-content">
+                                <div class="product-item">Bright Bar</div>
+                                <div class="product-item">Square bar</div>
+                                <div class="product-item">Hex</div>
+                                <div class="product-item">Wire</div>
+                            </div>
+                        </div>
+                        <div class="category" id="category6">
+                            <div class="category-header" onclick="toggleCategory('category6')">
+                                Stainless Steel Dish End
+                                <span class="collapsible-icon">+</span>
+                            </div>
+                        </div>
+                        <div class="category" id="category7">
+                            <div class="category-header" onclick="toggleCategory('category7')">
+                                Stainless Steel Puddle Flanges
+                                <span class="collapsible-icon">+</span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="category" id="category4">
-                        <div class="category-header" onclick="toggleCategory('category4')">
-                            Stainless Steel Flat
-                            <span class="collapsible-icon">+</span>
-                        </div>
-                        <div class="category-content">
-                            <div class="product-item">Angel</div>
-                            <div class="product-item">Channel</div>
-
-                        </div>
-                    </div>
-                    <div class="category" id="category5">
-                        <div class="category-header" onclick="toggleCategory('category5')">
-                            Stainless Steel Round Bar
-                            <span class="collapsible-icon">+</span>
-                        </div>
-                        <div class="category-content">
-                            <div class="product-item">Bright Bar</div>
-                            <div class="product-item">Square bar</div>
-                            <div class="product-item">Hex</div>
-                            <div class="product-item">Wire</div>
-                        </div>
-                    </div>
-                    <div class="category" id="category6">
-                        <div class="category-header" onclick="toggleCategory('category6')">
-                            Stainless Steel Dish End
-                            <span class="collapsible-icon">+</span>
-                        </div>
-                    </div>
-                    <div class="category" id="category7">
-                        <div class="category-header" onclick="toggleCategory('category7')">
-                            Stainless Steel Puddle Flanges
-                            <span class="collapsible-icon">+</span>
-                        </div>
-                    </div>
 
                 </div>
                 <script>
@@ -248,7 +257,7 @@
                         }
                     }
                 </script>
-                <div class="col-md-9 product-item-details">
+                <div class="col-md-8 product-item-details">
                     <div class="home-section-product">
                         <div class="heading-product">
                             <h1>Our Products </h1>
@@ -257,7 +266,8 @@
                             <!-- Card 1 -->
                             <div class="card custom-card">
                                 <div class="card-img">
-                                    <img src="./Images/varcasproductphoto/DISH END.jpg" class="card-img-top" alt="Card Image 1">
+                                    <img src="./Images/varcasproductphoto/DISH END.jpg" class="card-img-top"
+                                        alt="Card Image 1">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">DISH END</h5>
@@ -268,7 +278,8 @@
                             <!-- Card 2 -->
                             <div class="card custom-card">
                                 <div class="card-img">
-                                    <img src="./Images/varcasproductphoto/Ellipsoidal dish.jpg" class="card-img-top" alt="Card Image 2">
+                                    <img src="./Images/varcasproductphoto/Ellipsoidal dish.jpg" class="card-img-top"
+                                        alt="Card Image 2">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Ellipsoidal dish</h5>
@@ -279,7 +290,8 @@
                             <!-- Card 3 -->
                             <div class="card custom-card">
                                 <div class="card-img">
-                                    <img src="Images/varcasproductphoto/ellipsoidal dish End.jpg" class="card-img-top" alt="Card Image 3">
+                                    <img src="Images/varcasproductphoto/ellipsoidal dish End.jpg" class="card-img-top"
+                                        alt="Card Image 3">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Ellipsoidal dish End</h5>
@@ -290,7 +302,8 @@
                             <!-- Card 4 -->
                             <div class="card custom-card">
                                 <div class="card-img">
-                                    <img src="./Images/varcasproductphoto/SS Puddle Flanges 1.jpg" class="card-img-top" alt="Card Image 4">
+                                    <img src="./Images/varcasproductphoto/SS Puddle Flanges 1.jpg" class="card-img-top"
+                                        alt="Card Image 4">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Puddle Flanges</h5>
@@ -299,7 +312,8 @@
                             </div>
                             <div class="card custom-card">
                                 <div class="card-img">
-                                    <img src="./Images/varcasproductphoto/Torispherical Head Dish End.jpg" class="card-img-top" alt="Card Image 4">
+                                    <img src="./Images/varcasproductphoto/Torispherical Head Dish End.jpg"
+                                        class="card-img-top" alt="Card Image 4">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">Torispherical Head Dish End</h5>
@@ -308,7 +322,8 @@
                             </div>
                             <div class="card custom-card">
                                 <div class="card-img">
-                                    <img src="./Images/varcasproductphoto/stainless-steel-forged-VS.webp" class="card-img-top" alt="Card Image 4">
+                                    <img src="./Images/varcasproductphoto/stainless-steel-forged-VS.webp"
+                                        class="card-img-top" alt="Card Image 4">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">stainless-steel-forged-VS</h5>

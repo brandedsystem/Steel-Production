@@ -80,15 +80,15 @@ body {
     height: 600px;
     position: relative;
     border-top: 2px solid black;
-
+    padding: 0 !important;
 }
 
 /***** Left side product list *****/
 
 .product-item-list {
-    
+
     margin: 0;
-    padding: 0px;
+    padding: 0px !important;
     overflow-y: scroll;
     scroll-behavior: smooth;
     height: 600px;
@@ -101,11 +101,8 @@ body {
     justify-content: center;
     width: 100%;
     margin: 0;
-    padding: 10px;
-    background-color: rgb(238, 232, 232);
+    background-color: rgba(238, 232, 232, 0.795);
     color: black;
-    font-size: 30px;
-    line-height: 10px;
     text-transform: uppercase;
     border-bottom: 2px solid black;
 
@@ -114,12 +111,18 @@ body {
 .heading-product-list h1 {
     text-align: center;
     line-height: normal;
-    font-size: 15px;
+    font-size: 26px;
+    padding: 10px;
 
 }
 
+.cat-section {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
 .category {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -153,25 +156,24 @@ body {
 /***** End Left side product list *****/
 
 
-/***** right side product details *****/ 
+/***** right side product details *****/
 
-.product-item-details {
-    border: 1px solid red;
+.product-item-details {    
     margin: 0;
-    padding: 0px;
+    padding: 0px !important;
     width: 100%;
-    height: 600px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+    
+    position: relative;
 }
 
 .home-section-product {
     margin: 0;
     padding: 0px;
     position: relative;
-
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 600px;
 }
-
 
 .heading-product {
     position: relative;
@@ -182,7 +184,8 @@ body {
     background-color: rgba(238, 232, 232, 0.795);
     color: black;
     text-transform: uppercase;
-    border-bottom:2px solid black;
+    border-bottom: 2px solid black;
+   
 
 }
 
@@ -197,18 +200,24 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     padding: 10px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-wrap: normal;
 }
 
 .custom-card {
     max-width: 200px;
-    margin: 20px;   
-  }
+    margin: 20px;
+    position: relative; 
+    
 
-  /* Responsive image */
-  .custom-card img {
+}
+
+/* Responsive image */
+.custom-card img {
     width: 100%;
     height: auto;
-  }
+}
 
 
 .pagination-container {
