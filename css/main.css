@@ -16,7 +16,7 @@ body {
 
 /* Custom styles for the navbar */
 .navbar {
-    background-color: rgba(224, 224, 224, 0.87);
+    background-color: rgb(255 212 0 / 60%);
     /* Navbar background color */
 
 
@@ -191,9 +191,9 @@ body {
 /***** End Welcome section *****/
 
 footer {
-    background: rgba(228, 226, 226, 0.911);
+    background-color: rgb(37, 33, 33);
     /* Footer background color */
-    color: black;
+    color: white;
     /* Footer text color */
     padding: 20px 0;
     bottom: 0;
@@ -203,7 +203,7 @@ footer {
 
 .heading-footer {
     font-weight: bold;
-    border-bottom: #000000 1px solid;
+    border-bottom: #ffffff 1px solid;
     margin-bottom: 10px;
 
 }
@@ -222,7 +222,7 @@ footer {
 
 .nav-link1 {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .nav-link1:hover {

@@ -47,6 +47,32 @@
         </nav>
     </header>
     <section id="products">
+
+        <div class="Slider-pro container-fluid">
+            <div id="imageSlider-pro" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Images/varcasproductphoto/flange-types.png" class="banner-img" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Images/varcasproductphoto/puddle-flange-specification.gif" class="banner-img"
+                            alt="Image 2">
+                    </div>
+                </div>
+                <!-- Slider Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider-pro"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#imageSlider-pro"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!--
         <div class="container-fluid">
             <div class="product-type">
                 <a target="_blank" href="./Images/varcasproductphoto/flange-types.png">
@@ -58,94 +84,319 @@
                     <img src="./Images/varcasproductphoto/puddle-flange-specification.gif" alt="Type of Steel Product">
                 </a>
             </div>
-        </div>
-        <div class="container-fluid mt-1">
+        </div>-->
+        <div class="container-fluid mt-1 product-section1">
             <div class="row m-0 p-0">
                 <div class="col-md-3 product-item-list">
                     <div class="heading-product-list">
                         <h1>Product List </h1>
                     </div>
+                    <div class="category" id="category1">
+                        <div class="category-header" onclick="toggleCategory('category1')">
+                            Stainless Steel Pipe Seamless
+                            <span class="collapsible-icon">+</span>
+                        </div>
+                        <div class="category-content">
+                            <div class="product-item">Welded</div>
+
+                        </div>
+                    </div>
+                    <div class="category" id="category2">
+                        <div class="category-header" onclick="toggleCategory('category2')">
+                            Stainless Steel Flanges
+                            <span class="collapsible-icon">+</span>
+                        </div>
+                        <div class="category-content">
+                            <div class="product-item">Slip on Flanges</div>
+                            <div class="product-item">Weld Neck flanges</div>
+                            <div class="product-item">Blind Flanges</div>
+                            <div class="product-item">Spectacle Blind Flanges</div>
+                            <div class="product-item">Orifice Flanges</div>
+                            <div class="product-item">Threaded Flanges</div>
+                            <div class="product-item">Socket Weld Flanges</div>
+                            <div class="product-item">Flat Flanges</div>
+                            <div class="product-item">High Hub Flanges</div>
+                            <div class="product-item">Groove and Tongue Flange</div>
+                            <div class="product-item">Square Flange</div>
+                            <div class="product-item">Ring Type Joint Flange</div>
+                            <div class="product-item">Loose Flange</div>
+                            <div class="product-item">Expander Flange</div>
+                            <div class="product-item">Nipo Flange</div>
+                            <div class="product-item">Plate Flange</div>
+                            <div class="product-item">Lap Joint Flange</div>
+                            <div class="product-item">Weldo Flange</div>
+                            <div class="product-item">Flange Olet</div>
+                            <div class="product-item">Bleed Ring Flange</div>
+                            <div class="product-item">Forged Flange</div>
+                            <div class="product-item">Raised Flange</div>
+                            <div class="product-item">Male Female Flange</div>
+                            <div class="product-item">Ring Spacers Flange</div>
+                            <div class="product-item">Flange Adapter</div>
+                            <div class="product-item">Non Standard Flange</div>
+                            <div class="product-item">Spade Flange</div>
+                            <div class="product-item">Hydraulic SAE</div>
+                            <div class="product-item">Opening Flange</div>
+                        </div>
+                    </div>
+                    <div class="category" id="category3">
+                        <div class="category-header" onclick="toggleCategory('category3')">
+                            Pipe Fitting
+                            <span class="collapsible-icon">+</span>
+                        </div>
+                        <div class="category-content">
+                            <div class="product-item">Equal Tee</div>
+                            <div class="product-item">Unequal Tee</div>
+                            <div class="product-item">Reducing Tee</div>
+                            <div class="product-item">Equal Cross</div>
+                            <div class="product-item">Unequal Cross</div>
+                            <div class="product-item">Reducing Cross</div>
+                            <div class="product-item">Reducers</div>
+                            <div class="product-item">Concentric Reducer</div>
+                            <div class="product-item">Eccentric Reducer</div>
+                            <div class="product-item">Stub Ends</div>
+                            <div class="product-item">Lap Joint Stub Ends</div>
+                            <div class="product-item">Long Stubend</div>
+                            <div class="product-item">Short Stubend</div>
+                            <div class="product-item">Pipe Cap</div>
+                            <div class="product-item">End Cap</div>
+                            <div class="product-item">Collar</div>
+                            <div class="product-item">Swedge Nipple</div>
+                            <div class="product-item">Pipe Nipples</div>
+                            <div class="product-item">Barrel Nipple</div>
+                            <div class="product-item">Reducing Nipple</div>
+                            <div class="product-item">Bend</div>
+                            <div class="product-item">Long Radius Bend</div>
+                            <div class="product-item">Piggable Bend</div>
+                            <div class="product-item">Reducing Elbow</div>
+                            <div class="product-item">90° Long Radius Elbow</div>
+                            <div class="product-item">90° Short Radius Elbow</div>
+                            <div class="product-item">45° Long Radius Elbow</div>
+                            <div class="product-item">45° Short Radius Elbow</div>
+                            <div class="product-item">180° Long Radius Elbow</div>
+                            <div class="product-item">180° Short Radius Elbow</div>
+                            <div class="product-item">Seamless Buttwelding 45° and 90° Elbows</div>
+                            <div class="product-item">Welded Elbows</div>
+                            <div class="product-item">Seamless Buttwelding 180° Returns</div>
+                            <div class="product-item">LR Elbow & LR Return / U Bend</div>
+                            <div class="product-item">SR Elbow & SR Return / U Bend</div>
+                            <div class="product-item">Straight Tees and Crosses</div>
+                            <div class="product-item">Reducing Outlet Tees and Reducing Outlet Crosses</div>
+                            <div class="product-item">Lateral Tee</div>
+                            <div class="product-item">Cushion Tee</div>
+                            <div class="product-item">Split Tees</div>
+                            <div class="product-item">Target Tee</div>
+                            <div class="product-item">Split Tee</div>
+                            <div class="product-item">Dish Ends</div>
+                            <div class="product-item">Return 180° Elbow</div>
+                            <div class="product-item">Wye tee/Lateral</div>
+                            <div class="product-item">Adaptor</div>
+                            <div class="product-item">Stand Pipe Adaptor</div>
+                            <div class="product-item">Socket</div>
+
+                        </div>
+                    </div>
+
+                    <div class="category" id="category4">
+                        <div class="category-header" onclick="toggleCategory('category4')">
+                            Stainless Steel Flat
+                            <span class="collapsible-icon">+</span>
+                        </div>
+                        <div class="category-content">
+                            <div class="product-item">Angel</div>
+                            <div class="product-item">Channel</div>
+
+                        </div>
+                    </div>
+                    <div class="category" id="category5">
+                        <div class="category-header" onclick="toggleCategory('category5')">
+                            Stainless Steel Round Bar
+                            <span class="collapsible-icon">+</span>
+                        </div>
+                        <div class="category-content">
+                            <div class="product-item">Bright Bar</div>
+                            <div class="product-item">Square bar</div>
+                            <div class="product-item">Hex</div>
+                            <div class="product-item">Wire</div>
+                        </div>
+                    </div>
+                    <div class="category" id="category6">
+                        <div class="category-header" onclick="toggleCategory('category6')">
+                            Stainless Steel Dish End
+                            <span class="collapsible-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="category" id="category7">
+                        <div class="category-header" onclick="toggleCategory('category7')">
+                            Stainless Steel Puddle Flanges
+                            <span class="collapsible-icon">+</span>
+                        </div>
+                    </div>
+
                 </div>
+                <script>
+                    // JavaScript to toggle the category content (expand/collapse)
+                    function toggleCategory(categoryId) {
+                        var categoryContent = document.getElementById(categoryId).getElementsByClassName("category-content")[0];
+                        var collapsibleIcon = document.getElementById(categoryId).getElementsByClassName("collapsible-icon")[0];
+
+                        if (categoryContent.style.display === "block") {
+                            categoryContent.style.display = "none";
+                            collapsibleIcon.textContent = "+";
+                        } else {
+                            categoryContent.style.display = "block";
+                            collapsibleIcon.textContent = "-";
+                        }
+                    }
+                </script>
                 <div class="col-md-9 product-item-details">
                     <div class="home-section-product">
                         <div class="heading-product">
                             <h1>Our Products </h1>
                         </div>
-                        <div class="container product-item-list-contain">
-                            <div class="card">
-                                <div class="product-img">
-                                    <a target="_blank" href="./Images/varcasproductphoto/DISH END.jpg">
-                                        <img src="./Images/varcasproductphoto/DISH END.jpg" alt="DISH END">
-                                    </a>
+                        <div class="container product-item-list-contain" id="cardContainer">
+                            <!-- Card 1 -->
+                            <div class="card custom-card">
+                                <div class="card-img">
+                                    <img src="./Images/varcasproductphoto/DISH END.jpg" class="card-img-top" alt="Card Image 1">
                                 </div>
-                                <div class="card-contain">
-                                    <h2>DISH END</h2>
+                                <div class="card-body">
+                                    <h5 class="card-title">DISH END</h5>
+                                    <a href="#" class="btn btn-primary">Learn More</a>
                                 </div>
                             </div>
 
-                            <div class="card">
-                                <div class="product-img">
-                                    <a target="_blank" href="./Images/varcasproductphoto/ellipsoidal dish End.jpg">
-                                        <img src="./Images/varcasproductphoto/Ellipsoidal dish End.jpg"
-                                            alt="Ellipsoidal dish End">
-                                    </a>
+                            <!-- Card 2 -->
+                            <div class="card custom-card">
+                                <div class="card-img">
+                                    <img src="./Images/varcasproductphoto/Ellipsoidal dish.jpg" class="card-img-top" alt="Card Image 2">
                                 </div>
-                                <div class="card-contain">
-                                    <h2>ellipsoidal dish End</h2>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="product-img">
-                                    <a target="_blank" href="./Images/varcasproductphoto/Ellipsoidal dish.jpg">
-                                        <img src="./Images/varcasproductphoto/Ellipsoidal dish.jpg"
-                                            alt="Ellipsoidal dish">
-                                    </a>
-                                </div>
-                                <div class="card-contain">
-                                    <h2>Ellipsoidal dish</h2>
+                                <div class="card-body">
+                                    <h5 class="card-title">Ellipsoidal dish</h5>
+                                    <a href="#" class="btn btn-primary">Learn More</a>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="product-img">
-                                    <a target="_blank" href="./Images/varcasproductphoto/SS Dish End Jannock.jpg">
-                                        <img src="./Images/varcasproductphoto/SS Dish End Jannock.jpg"
-                                            alt="SS Dish End Jannock">
-                                    </a>
+
+                            <!-- Card 3 -->
+                            <div class="card custom-card">
+                                <div class="card-img">
+                                    <img src="Images/varcasproductphoto/ellipsoidal dish End.jpg" class="card-img-top" alt="Card Image 3">
                                 </div>
-                                <div class="card-contain">
-                                    <h2>SS Dish End Jannock</h2>
+                                <div class="card-body">
+                                    <h5 class="card-title">Ellipsoidal dish End</h5>
+                                    <a href="#" class="btn btn-primary">Learn More</a>
                                 </div>
-                            </div>                                                                           
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="card custom-card">
+                                <div class="card-img">
+                                    <img src="./Images/varcasproductphoto/SS Puddle Flanges 1.jpg" class="card-img-top" alt="Card Image 4">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Puddle Flanges</h5>
+                                    <a href="#" class="btn btn-primary">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="card-img">
+                                    <img src="./Images/varcasproductphoto/Torispherical Head Dish End.jpg" class="card-img-top" alt="Card Image 4">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Torispherical Head Dish End</h5>
+                                    <a href="#" class="btn btn-primary">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="card custom-card">
+                                <div class="card-img">
+                                    <img src="./Images/varcasproductphoto/stainless-steel-forged-VS.webp" class="card-img-top" alt="Card Image 4">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">stainless-steel-forged-VS</h5>
+                                    <a href="#" class="btn btn-primary">Learn More</a>
+                                </div>
+                            </div>
+
+                            <!-- Add more cards as needed -->
+
                         </div>
+                        <!-- Pagination -->
                         <div class="container pagination-container">
-                            <ul class="pagination">
-                                <li class="page-item disabled">
-                                    <span class="page-link">&laquo;</span>
-                                </li>
-                                <li class="page-item active">
-                                    <span class="page-link">1</span>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">2</a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">3</a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">4</a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">5</a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">&raquo;</a>
-                                </li>
+                            <ul class="pagination" id="pagination">
+                                <!-- Pagination items will be dynamically added here using JavaScript -->
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Bootstrap JavaScript (optional, but required for some Bootstrap features) -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+        <script>
+            // Number of cards per page
+            const cardsPerPage = 3;
+
+            // Total number of cards
+            const totalCards = document.querySelectorAll('.custom-card').length;
+
+            // Calculate total number of pages
+            const totalPages = Math.ceil(totalCards / cardsPerPage);
+
+            // Initial page
+            let currentPage = 1;
+
+            // Function to show/hide cards based on the current page
+            function updateCardDisplay() {
+                const cards = document.querySelectorAll('.custom-card');
+                cards.forEach((card, index) => {
+                    if (index >= (currentPage - 1) * cardsPerPage && index < currentPage * cardsPerPage) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            // Function to generate pagination links
+            function generatePaginationLinks() {
+                const paginationContainer = document.getElementById('pagination');
+
+                for (let i = 1; i <= totalPages; i++) {
+                    const li = document.createElement('li');
+                    li.classList.add('page-item');
+                    if (i === currentPage) {
+                        li.classList.add('active');
+                    }
+                    const a = document.createElement('a');
+                    a.classList.add('page-link');
+                    a.href = '#';
+                    a.textContent = i;
+                    a.addEventListener('click', () => {
+                        currentPage = i;
+                        updateCardDisplay();
+                        updatePaginationLinks();
+                    });
+                    li.appendChild(a);
+                    paginationContainer.appendChild(li);
+                }
+            }
+
+            // Function to update pagination links based on the current page
+            function updatePaginationLinks() {
+                const paginationLinks = document.querySelectorAll('.page-item');
+                paginationLinks.forEach((link, index) => {
+                    if (index + 1 === currentPage) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
+            }
+
+            // Initial setup
+            updateCardDisplay();
+            generatePaginationLinks();
+        </script>
     </section>
     <!-- Fixed Footer -->
     <footer>
