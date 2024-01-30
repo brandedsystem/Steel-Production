@@ -58,7 +58,9 @@ body {
     font-style: normal;
     font-size: 20px;
 }
-
+.email-wrapper:hover {
+color: red !important;
+}
 
 
 

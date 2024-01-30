@@ -101,60 +101,18 @@
                 <div class="pro-type-img">
                     <a target="_blank" href="./Images/Products/flange-types.png">
                         <img src="./Images/Products/flange-types.png" alt="Type of Steel Product">
-                        <button class="view-btn"
-                            onclick="openModal('./Images/Products/flange-types.png')">View Image</button>
-                    </a>
+                    </a>                   
                 </div>
             </div>
             <div class="col-md-5">
                 <div class="pro-details-img">
                     <a target="_blank" href="./Images/Products/puddle-flange-specification.gif">
-                        <img src="./Images/Products/puddle-flange-specification.gif"
-                            alt="Type of Steel Product">
-                        <button class="view-btn"
-                            onclick="openModal('./Images/Products/puddle-flange-specification.gif')">View
-                            Image</button>
-                    </a>
+                        <img src="./Images/Products/puddle-flange-specification.gif" alt="Type of Steel Product">
+                    </a>                    
                 </div>
             </div>
         </div>
     </section>
-    <div class="modal" id="myModal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModal">&times;</span>
-            <img class="modal-img" src="" alt="Viewed Image" id="viewedImage">
-        </div>
-    </div>
-
-    <script>
-        function openModal(imageSrc) {
-            const modal = document.getElementById('myModal');
-            const modalImg = document.getElementById('viewedImage');
-
-            // Set the image source
-            modalImg.src = imageSrc;
-
-            // Display the modal
-            modal.style.display = 'block';
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('myModal');
-
-            // Close the modal
-            modal.style.display = 'none';
-        }
-
-        // Close the modal if clicked outside of the image
-        window.onclick = function (event) {
-            const modal = document.getElementById('myModal');
-            if (event.target == modal) {
-                closeModal();
-            }
-        };
-    </script>
-
-
 
     <!-- Fixed Footer -->
     <footer id="footer">
