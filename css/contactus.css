@@ -5,29 +5,31 @@
 }
 
 body {
-    
-    scroll-behavior: smooth;
-    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
 
+    scroll-behavior: smooth;
+    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif' !important;
 }
 
 /***** End Heading Or Navbaar  *****/
 
 /***** Body *****/
 #contactus {
-    padding: 10px;
+    padding:50px;
     background-color: rgba(243, 243, 243, 0.897);
 
 }
 
 .container-section {
     border-radius: 20px;
+    box-shadow: 0 0 10px rgba(43, 34, 34, 0.6) !important;
+    border-radius: 10px;
+    padding: 40px;
 }
 
 .con-contain {
     display: block;
     position: relative;
-    border-right: 1px solid black;
+    border-right: 1px solid black;    
 
 }
 
@@ -58,8 +60,10 @@ body {
     font-style: normal;
     font-size: 20px;
 }
+
 .email-wrapper:hover {
-color: red !important;
+    color: red !important;
+    display: inline-block;
 }
 
 
@@ -76,14 +80,12 @@ color: red !important;
 form {
     width: 80%;
     padding: 20px;
-    background-color: rgb(231, 221, 221);
+    background-color: #dee2e6;
     border-radius: 10px;
 
 }
 
-
 .form-body-section {
-
     border-radius: 20px;
 }
 
