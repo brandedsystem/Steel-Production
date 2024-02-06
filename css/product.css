@@ -3,92 +3,25 @@
     box-sizing: 0;
     margin: 0;
 }
-
 body {
-
     scroll-behavior: smooth;
-    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
+    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif' !important;
 }
-
-
-
-/***** Slider  *****/
-
-.Slider-pro {
-    overflow: hidden;
-    padding: 0;
-
-}
-
-
-.Slider #imageSlider-pro {
-    height: 100vh;
-    width: 300px;
-
-}
-
-.carousel-inner {
-    height: 100%;
-    width: 100%;
-}
-
-.carousel-item {
-    height: 100%;
-    width: 100%;
-}
-
-.carousel-item img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    background-color: #ffffff;
-    /* Change this to your preferred color */
-    border: none;
-    color: #ffffff;
-    font-size: 20px;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: -30px;
-    /* Adjust this value as needed */
-}
-
-/* Style for the carousel control icons */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: #f70707;
-    /* Change this to your preferred color */
-    border-radius: 50%;
-}
-
-
-
-
-/***** End Slider  *****/
 #products {
     padding-left: 0px !important;
     padding-right: 0px !important;
-    position: relative; 
-    padding: 0 !important;
-    border-bottom: 5px solid black;
-    padding: 100px;
-
+    position: relative;
+    padding: 25px !important;
+    background-color: #e9ecef78;
 }
-
-
 .product-section1 {
     position: relative;
-    border-top: 2px solid black;
-    padding: 0 !important;
+    padding-top: 20px !important;
     height: 100%;
     width: 100%;
+    box-shadow: 0 0 10px rgba(43, 34, 34, 0.6);
+    border-radius: 10px;
 }
-
 /***** Left side product list *****/
 
 .product-item-list {
@@ -99,40 +32,32 @@ body {
     height: 600px;
     scroll-behavior: smooth;
 }
-
 .heading-product-list {
     position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
     margin: 0;
-    background-color: rgba(238, 232, 232, 0.795);
     color: black;
     text-transform: uppercase;
-    border-bottom: 2px solid black;
-
 }
-
 .heading-product-list h1 {
     text-align: center;
     line-height: normal;
     font-size: 26px;
     padding: 10px;
-
 }
-
 .cat-section {
     padding-right: 20px;
     padding-left: 20px;
     z-index: -1;
 }
-
 .category {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 /* Style for the category header */
+
 .category-header {
     background-color: #f9f9f9;
     padding: 10px;
@@ -141,59 +66,48 @@ body {
     font-weight: bold;
     border: 1px solid #ccc;
 }
-
 /* Style for the category content (product list) */
+
 .category-content {
     display: none;
     padding: 10px;
-    border: 1px solid #ccc;
 }
-
 /* Style for the product list items */
+
 .product-item {
     margin-bottom: 5px;
 }
-
 /* Style for the collapsible icon */
+
 .collapsible-icon {
     float: right;
 }
-
 /***** End Left side product list *****/
 
-
 /***** right side product details *****/
-
 
 .product-item-details {
     padding: 0px !important;
     height: 100%;
     position: relative;
 }
-
 .heading-product {
     position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
     margin: 0;
-    background-color: rgba(238, 232, 232, 0.795);
     color: black;
     text-transform: uppercase;
-    border-bottom: 2px solid black;
-
 }
-
 .heading-product h1 {
     text-align: center;
     line-height: normal;
 }
-
 .heading-product {
     text-align: center;
     margin-bottom: 20px;
 }
-
 .product-item-list-contain {
     width: 100%;
     height: 100%;
@@ -202,34 +116,31 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px;
-
 }
-
 /* Product card styles */
+
 .custom-card {
     border: 1px solid #ddd;
     margin-bottom: 20px;
     width: 200px;
     height: 300px !important;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(32, 043, 190, 0.9);
     transition: box-shadow 0.3s ease-in-out;
 }
-
 .custom-card:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
-
 .card-img {
     position: relative;
     overflow: hidden;
+    height: 90%;
 }
-
 .card-img img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
-
 .view-btn {
     position: absolute;
     bottom: 10px;
@@ -240,9 +151,6 @@ body {
     padding: 5px 10px;
     cursor: pointer;
 }
-
-
-
 /* Pagination styles */
 
 .pagination-wrap {
@@ -251,12 +159,10 @@ body {
     flex-wrap: wrap;
     padding: 20px;
 }
-
 .pagination {
     text-align: center;
     margin-top: 20px;
 }
-
 .pagination span {
     width: 30px;
     background-color: #007bff;
@@ -266,13 +172,11 @@ body {
     cursor: pointer;
     border-radius: 10px;
 }
-
 .pagination span:hover {
     background-color: #2980b9;
     border-radius: 20px;
     transition: 2s ease-in-out;
 }
-
 .pagination button {
     background-color: #3498db;
     color: #fff;
@@ -282,97 +186,81 @@ body {
     cursor: pointer;
     border-radius: 10px;
 }
-
 .pagination button:hover {
     background-color: #2980b9;
     border-radius: 20px;
     transition: 2s ease-in-out;
 }
-
 /* Responsive styles */
+
 @media (max-width: 768px) {
     .custom-card {
         margin-bottom: 15px;
     }
-
     .pagination button {
         padding: 6px 12px;
     }
 }
-
-
 /***** End right side product details *****/
-
-
-
-
-
 
 /***** 3 Products showing deatails *****/
 
 #pro-3 {
-    width: 100%;    
+    width: 100%;
     position: relative;
-    border: 5px solid black;
-
+    border-top: 2px solid black;
 }
-
 .pro-3-product {
     position: relative !important;
-    background-color: rgba(231, 221, 221, 0.918);
-    border-color: 2px solid black !important;
+    background-color: rgb(237 237 237 / 50%);
     display: flex;
     justify-content: center;
-
+    padding: 30px !important;
+    border-radius: 20px !important;
 }
-
-
+.pro-3-contain {
+    box-shadow: 0 0 10px rgba(43, 34, 34, 0.6) !important;
+    border-radius: 10px;
+}
 .card-pro {
-    border: 1px solid #ddd;    
+    border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     transition: box-shadow 0.3s ease-in-out;
     padding: 0;
-    margin: 0;    
+    margin: 0;
 }
-
 .card-pro:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
-
 .img-pro {
     position: relative;
     overflow: hidden;
 }
-
 .img-pro img {
     width: 100%;
     height: auto;
     display: block;
 }
-
 .card-title {
     display: flex;
     justify-content: center;
     text-align: center;
     padding: 10px;
-    font-size: medium;    
+    font-size: medium;
     width: 100%;
     height: 100%;
     position: relative;
 }
-
 /* Responsive styles */
+
 @media (max-width: 768px) {
     .card-pro {
         margin-bottom: 15px;
     }
-
     .view-btn1 {
         bottom: 5px;
         right: 5px;
         padding: 3px 6px;
     }
 }
-
-
 /***** End 3 Products showing deatails *****/

@@ -3,114 +3,85 @@
     box-sizing: 0;
     margin: 0;
 }
-
 body {
-
     /* Adjusted for the fixed navbar height */
     scroll-behavior: smooth;
     font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
-
 }
-
 /***** Heading Or Navbaar  *****/
 
 /* Custom styles for the navbar */
+
 .navbar {
-    background-color: rgb(255 212 0 / 60%);
+    background-color: white;
     /* Navbar background color */
-
-
+    box-shadow: 0 0 10px rgba(43, 34, 34, 0.6);
 }
-
 .logo {
     width: 250px;
     height: 60px;
     overflow: hidden;
 }
-
 .logo img {
     width: 100%;
     height: 100%;
 }
-
 .navbar-brand {
     font-size: 1.5rem;
     /* Navbar brand font size */
 }
-
 .navbar-brand:hover {
-
     transition: ease-in-out .5s;
-
     color: red;
     /* Navbar brand font size */
 }
-
-
 .navbar-toggler {
     border: none;
     /* Remove border for a cleaner look */
 }
-
 .navbar-toggler-icon {
     background-color: transparent;
     /* Color of the toggler icon */
 }
-
 .navbar-nav .nav-item {
     margin-right: 10px;
-
 }
-
 .navbar-nav .nav-link {
-
     /* Navbar link color */
     font-weight: bold;
 }
-
 .navbar-nav .nav-link:hover {
     background-color: gray;
     border-radius: 10px;
     color: white;
-
     /* Navbar link color on hover */
 }
-
-
 /***** End Heading Or Navbaar  *****/
 
-
-
-
 .Slider {
-
     overflow: hidden;
     padding: 0;
-
+    padding: 20px;
 }
-
-
 .Slider .carousel {
     height: 100vh;
     width: 100%;
-
+    box-shadow: 0 0 10px rgba(43, 34, 34, 0.6);
+    border-radius: 20px;
+    overflow: hidden;
 }
-
 .carousel-inner {
     height: 100%;
     width: 100%;
 }
-
 .carousel-item {
     height: 100%;
     width: 100%;
 }
-
 .banner-img {
     height: 100%;
     width: 100%;
 }
-
 .carousel-caption {
     position: absolute !important;
     top: 30%;
@@ -121,86 +92,64 @@ body {
     text-align: center;
     animation-name: home-heading;
     animation-duration: 2s;
-
 }
-
 .carousel-caption h5 {
     font-size: 80px;
-
     /* Font size for the heading in the caption */
 }
-
 .carousel-caption p {
     font-size: 1rem;
     /* Font size for the paragraph in the caption */
 }
-
 .visually-hidden {
     background: transparent;
-
 }
-
 .visually-hidden:hover {
     background-color: gray;
     color: white;
 }
-
-
 /***** End Slider_Home *****/
 
 /***** Welcome section *****/
 
 #welcome {
-    padding: 80px 0;
-    border: 5px solid black;
+    padding: 80px 0;      
+    background-color: #d3d3d359;
 }
-
-
 .heading-text {
-
     margin: 0 auto;
     text-align: center;
 }
-
 .heading-text h2 {
     font-size: 36px;
     margin-bottom: 20px;
     color: #333;
     /* Set your desired heading color */
 }
-
 .heading-text span {
     color: green;
     width: 100%;
     overflow: hidden;
     animation-name: typing;
     animation-duration: 5s;
-
-
 }
-
 .heading-text .lead {
     font-size: 18px;
     line-height: 1.5;
     color: #666;
     /* Set your desired text color */
 }
-
 /***** Product type images *****/
-
 
 #product-type {
     width: 100%;
     position: relative;
-    border: 5px solid black;
     padding-top: 10px;
     padding-bottom: 0px;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
-
-.pro-type-img,
-.pro-details-img {
+.pro-type-img, .pro-details-img {
     width: 100%;
     height: 100%;
     padding: 10px;
@@ -208,40 +157,28 @@ body {
     position: relative;
     transition: filter 0.3s ease;
     overflow: hidden;
-
 }
-
 .pro-type-img img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     object-position: center;
-
 }
-
 .pro-details-img img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     object-position: center;
 }
-
-.pro-type-img:hover img,
-.pro-details-img:hover img {
-    filter: blur(1px);
+.pro-type-img:hover img, .pro-details-img:hover img {
+    filter: blur(.6px);
 }
-
-
-
 /***** End Product type images *****/
-
-
-
 
 /***** End Welcome section *****/
 
 #footer {
-    background-color: rgb(37, 33, 33);
+    background-color: #486481;
     /* Footer background color */
     color: white;
     /* Footer text color */
@@ -251,14 +188,11 @@ body {
     font-style: italic;
     position: relative;
 }
-
 .heading-footer {
     font-weight: bold;
     border-bottom: #ffffff 1px solid;
     margin-bottom: 10px;
-
 }
-
 .footer-list {
     list-style-type: none;
     padding: 0;
@@ -266,16 +200,13 @@ body {
     margin-left: 2%;
     /* Set your desired background color */
 }
-
 .nav-item1 {
     padding: 1px;
 }
-
 .nav-link1 {
     text-decoration: none;
     color: white;
 }
-
 .nav-link1:hover {
     color: #ff0000;
     /* Set your desired hover color */
