@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                <title>
+                    Contact Form
+                </title>
+                <style>
+                    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+                </style>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <div class="container">
+            <form id="contactForm">
+                <label for="name">
+                    Name:
+                </label>
+                <input id="name" name="name" required="" type="text">
+                    <label for="email">
+                        Email:
+                    </label>
+                    <input id="email" name="email" required="" type="email">
+                        <label for="message">
+                            Message:
+                        </label>
+                        <textarea id="message" name="message" required="">
+                        </textarea>
+                        <button onclick="sendEmail()" type="button">
+                            Submit
+                        </button>
+                    </input>
+                </input>
+            </form>
+        </div>
+        <script src="https://cdn.emailjs.com/dist/email.min.js">
+        </script>
+        <script>
+            emailjs.init("LlUkf7I-7AALgd5av");  // Replace with your EmailJS user ID
+
+    function sendEmail() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        emailjs.send("service_npwk7lr", "template_0ybmzmn", {
+            from_name: name,
+            from_email: email,
+            message: message,
+        })
+        .then(function(response) {
+            console.log("Email sent successfully:", response);
+            alert('Your mail is sent!');
+        })
+        .catch(function(error) {
+            console.error("Error sending email:", error);
+            alert('Oops... Something went wrong.');
+        });
+    }
+        </script>
+    </body>
+</html>
