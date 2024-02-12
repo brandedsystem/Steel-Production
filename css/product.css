@@ -12,14 +12,14 @@ body {
     padding-right: 0px !important;
     position: relative;
     padding: 25px !important;
-    background-color: #e9ecef78;
+    background-color: rgb(235 235 235 / 25%);
 }
 .product-section1 {
     position: relative;
     padding-top: 20px !important;
     height: 100%;
     width: 100%;
-    box-shadow: 0 0 10px rgba(43, 34, 34, 0.6);
+    box-shadow: 0 0 10px rgba(43, 34, 34, 0.2);
     border-radius: 10px;
 }
 /***** Left side product list *****/
