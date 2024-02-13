@@ -218,6 +218,25 @@ body {
     color: white;
     /* Set your desired text color */
 }
+/* Desktop Product  */
+
+./* You can customize card styles here */
+.card {
+    border: 1px solid #ddd; /* Add borders for visual separation */
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.card img {
+    width: 100%; /* Make images inside cards responsive */
+    height: auto;
+}
+
+
+
+
+
+
+
 /***** Product type images *****/
 
 #product-type {
