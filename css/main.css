@@ -354,7 +354,7 @@ body {
 
 #footer {
     background-color: #2185a0;
-    color: #01ffc1;
+    color: white;
     padding: 20px 0;
     bottom: 0;
     width: 100%;
@@ -363,7 +363,7 @@ body {
 }
 .heading-footer {
     font-weight: bold;
-    border-bottom: #ffffff 1px solid;
+    border-bottom: #01ffc1 2px solid;
     margin-bottom: 10px;
 }
 .footer-list {
@@ -384,4 +384,25 @@ body {
     
     color: #01ffc1;;
     /* Set your desired hover color */
+}
+
+.logo-footer {
+    /*background-color: #01ffc1;*/
+    overflow: hidden;
+    width: 100%;
+    height: 120px;
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    opacity: 0.4;
+
+}
+
+.logo-footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    
 }
