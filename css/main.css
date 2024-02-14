@@ -283,8 +283,7 @@ body {
 /* Introduction Section */
 
 .introduction-section {     
-    width: 100%;
-    border-top: 3px solid #00f90a;
+    width: 100%;    
     padding: 50px;    
 }
 
@@ -318,6 +317,64 @@ body {
     text-align: center;
     font-size: 18px;
 }
+
+.intro-contain {
+    padding: 30px;
+    background-color: #2185a0;
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px;
+}
+
+.intro-contain-product {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    cursor: pointer;
+}
+
+.icon {
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid #01ffc1;
+    background-color: #01ffc1;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adding transition for smooth hover effect */
+    display: inline-flex; /* Ensure the icon container doesn't break to the next line */
+    align-items: center; /* Vertically center the icon */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon:hover {
+    background-color: blue; /* Change the background color on hover */
+    transform: scale(1.1); /* Optional: Add a slight scale effect on hover */
+}
+
+.icon i {
+    font-size: 24px;
+    padding: 10px;
+    color: white;
+}
+
+.intro-contain-list {
+    padding: 20px;
+    border-radius: 5px;    
+    transition: background-color 0.3s ease;
+}
+
+.intro-contain-product:hover .intro-contain-list {
+    background-color: #01ffc1;
+    color: blue;
+}
+
+.intro-contain-list h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.intro-contain-list p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
 
 
 /*** Product type images *****/
