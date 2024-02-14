@@ -43,6 +43,39 @@ body {
    right: 0;
 }
 
+.why-us-part {
+    background-color: #2185a0;
+    color: whitesmoke;
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.Heading {
+    margin-bottom: 20px;
+    font-size: 36px;
+    position: relative; /* Ensure the pseudo-element is positioned relative to this element */
+}
+
+.Heading::after {
+    content: ''; /* Empty content, necessary for the pseudo-element to appear */
+    display: block; /* Make it a block-level element to take the full width */
+    height: 2px; /* Set the height of the underline */
+    width: 500px; /* Set the width of the underline */
+    background-color: #01ffc1; /* Set the color of the underline */
+    position: absolute; /* Position it absolutely relative to the .Heading */
+    bottom: 0; /* Position it at the bottom of the .Heading */
+    left: 0; /* Align it to the left */
+}
+
+.contain-about {
+    padding-bottom: 10px;
+}
+
+.contain-about p {
+    font-size: 24px;
+}
+
 
 
 .container-section {
