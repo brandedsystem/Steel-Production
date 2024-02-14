@@ -8,6 +8,7 @@ body {
 
     scroll-behavior: smooth;
     font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif' !important;
+
 }
 
 /***** End Heading Or Navbaar  *****/
@@ -15,13 +16,14 @@ body {
 /***** Body *****/
 #contactus {
     padding:50px;
-    background-color: rgba(243, 243, 243, 0.897);
+    background-color: rgba(rgb(243 243 243 / 15%));
 
 }
 
+
 .container-section {
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(43, 34, 34, 0.6) !important;
+    
     border-radius: 10px;
     padding: 40px;
 }
@@ -58,12 +60,19 @@ body {
 
 .text-cont h4 {
     font-style: normal;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .email-wrapper:hover {
     color: red !important;
     display: inline-block;
+}
+
+.text-cont i {
+    background-color: #2185a0;
+    padding: 10px;
+    color:#01ffc1;
+    border-radius: 50%;    
 }
 
 
@@ -78,10 +87,11 @@ body {
 }
 
 form {
-    width: 80%;
+    width: 90%;
     padding: 20px;
-    background-color: #e9ecef66;
+    background-color: #2185a0;
     border-radius: 10px;
+    color: #01ffc1;
 
 }
 
@@ -108,6 +118,8 @@ form {
     margin-bottom: 10px;
     background: transparent;
     outline: none;
+    background-color: #01ffc1;
+    color: #01ffc1;
 
 }
 
@@ -123,7 +135,8 @@ form {
     border: none;
     border-bottom: 2px solid black;
     margin-bottom: 10px;
-    background: transparent;
+    background-color: #01ffc1;
+    color: #01ffc1;
     outline: none;
     scroll-behavior: auto;
     overflow: scroll;
@@ -134,11 +147,14 @@ form {
 .form-body-section .btn {
     border-radius: 10px;
     margin-top: 20px;
+    background-color: #01ffc1;
+    border: 10px;
+    border: 2px solid white;
 }
 
 .form-body-section .btn:hover {
-    background-color: #ff0000;
-    color: white;
+    background-color: #2185a0;
+    color: #01ffc1;
 }
 
 

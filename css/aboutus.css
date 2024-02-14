@@ -1,10 +1,124 @@
 * {
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     margin: 0;
 }
-
 body {
     scroll-behavior: smooth;
     font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif' !important;
+}
+.title-img {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.title-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.Heading1 {
+    position: absolute;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title-img h2 {
+   color: white;
+   font-size: 48px;
+}
+
+.title-img h2::before {
+   content: '';
+   position: absolute;
+   width: 100%;
+   max-width: fit-content;
+   background-color: red;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+}
+
+.why-us-part {
+    background-color: #2185a0;
+    color: whitesmoke;
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.Heading {
+    margin-bottom: 20px;
+    font-size: 36px;
+    position: relative; /* Ensure the pseudo-element is positioned relative to this element */
+}
+
+.Heading::after {
+    content: ''; /* Empty content, necessary for the pseudo-element to appear */
+    display: block; /* Make it a block-level element to take the full width */
+    height: 2px; /* Set the height of the underline */
+    width: 500px; /* Set the width of the underline */
+    background-color: #01ffc1; /* Set the color of the underline */
+    position: absolute; /* Position it absolutely relative to the .Heading */
+    bottom: 0; /* Position it at the bottom of the .Heading */
+    left: 0; /* Align it to the left */
+}
+
+.contain-about {
+    padding-bottom: 10px;
+}
+
+.contain-about p {
+    font-size: 24px;
+}
+
+
+
+.container-section {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.about-heading-caption {
+    background-color: #2185a0;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.about-heading-caption h3 {
+    font-size: 42px;
+}
+.profile-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile-contain-1 {
+    display: block;
+    position: relative;
+    text-align: justify;
+}
+.profile-contain-1 p {
+    font-size: 20px;
+    text-align: justify;
+}
+.profile-contain-1 p>span {
+    color: #2185a0;
 }
