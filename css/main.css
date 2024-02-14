@@ -278,6 +278,48 @@ body {
     margin-bottom: 10px;
     padding: 30px;
 }
+
+
+/* Introduction Section */
+
+.introduction-section {     
+    width: 100%;
+    border-top: 3px solid #00f90a;
+    padding: 50px;    
+}
+
+.intro-heading {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.intro-heading h2 {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+
+}
+.intro-heading h2::before {
+     content: '';    
+    display: block;    
+    height: 2px;   
+    width: 100%;   
+    background-color: #01ffc1;   
+    position: absolute;   
+    bottom: 0;
+    left: 0;
+}
+
+.intro-heading .intro-lead {
+    padding: 20px;
+    text-align: justify;
+    text-align: center;
+    font-size: 18px;
+}
+
+
 /*** Product type images *****/
 
 #product-type {
