@@ -8,34 +8,41 @@ body {
     font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif' !important;
 }
 
-
-
-
-
-
-#products {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-    position: relative;
-    padding: 25px !important;
-    background-color: rgb(235 235 235 / 25%);
-}
+/* Body section main */
 .product-section1 {
-    position: relative;
-    padding-top: 20px !important;
-    height: 100%;
-    width: 100%;
-    box-shadow: 0 0 10px rgba(43, 34, 34, 0.2);
-    border-radius: 10px;
+   
 }
-/***** Left side product list *****/
+
+/* Product list navbar */
+.category {
+    display: block;
+    position: relative;
+    padding: 10px;    
+}
+
+.category ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+}
+
+.category ul>li> .btn {
+    width: auto;
+    padding: 10px;
+    border-radius: 1px solid red;
+}
+
+/* --------------------------------- */
+
+
+/***** right side product list *****/
 
 .product-item-list {
     width: 100%;
     margin: 0;
-    padding: 0px !important;
-    overflow-y: scroll;
-    height: 600px;
+    padding: 0px !important;  
+    
     scroll-behavior: smooth;
 }
 .heading-product-list {
