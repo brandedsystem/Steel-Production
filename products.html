@@ -129,7 +129,81 @@
                             </div>
                         </div>
                     </div>
-           
+                    <script>
+                        const productDictionary = {
+    'pipe-tube-pro': [{
+            name: 'Product 1',
+            imageUrl: './Images/Products/product1.jpg',
+            buttonText: 'Details',
+            buttonUrl: '/product1-page.html'
+        }, {
+            name: 'Product 2',
+            imageUrl: './Images/Products/SS Flange.jpg',
+            buttonText: 'Read More',
+            buttonUrl: 'index.html'
+        },
+        // Add more products as needed
+    ],
+    'Flanges-pro': [{
+            name: 'Product A',
+            imageUrl: './Images/Products/DISH END.jpg',
+            buttonText: 'Details',
+            buttonUrl: '/productA-page.html'
+        }, {
+            name: 'Product B',
+            imageUrl: './Images/Products/productB.jpg',
+            buttonText: 'Details',
+            buttonUrl: '/productB-page.html'
+        },
+        // Add more products as needed
+    ],
+    // Repeat for other product categories
+};
+// Function to display product details when clicked
+function displayProductDetails(categoryId, productId) {
+    const productDetailsContainer = document.getElementById('product-details');
+    const productTitle = document.getElementById('product-title');
+    const productImage = document.querySelector('.product-image');
+    const selectedProduct = productDictionary[categoryId][productId];
+    productTitle.textContent = selectedProduct.name;
+    productImage.src = selectedProduct.imageUrl;
+    productDetailsContainer.style.display = 'block';
+}
+// Function to show products for a specific category
+function showCategory(categoryId) {
+    const allProductContainer = document.getElementById('all-product-list');
+    const productDetailsContainer = document.getElementById('product-details');
+    // Hide the product details container
+    productDetailsContainer.style.display = 'none';
+    // Clear existing products
+    allProductContainer.innerHTML = '';
+    // Show products for the selected category
+    const products = (categoryId === 'all') ? Object.values(productDictionary).flat() : productDictionary[categoryId];
+    // Populate products for the selected category
+    products.forEach((product, index) => {
+        const productItem = document.createElement('div');
+        productItem.classList.add('product-item', 'product-card');
+        productItem.innerHTML = `
+                    <div class="product-card-header" onclick="displayProductDetails('${categoryId}', ${index})">
+        ${product.name}
+    </div>
+    <div class="product-card-body">
+        <img src="${product.imageUrl}" alt="${product.name}" class="product-image">
+        <a href="#" class="btn" onclick="redirectToProductPage('${product.buttonUrl}')">${product.buttonText}</a>
+    </div>
+                `;
+        allProductContainer.appendChild(productItem);
+    });
+    // Show the selected product container
+    allProductContainer.style.display = 'flex';
+}
+// Function to redirect to the product page
+function redirectToProductPage(url) {
+    window.location.href = url;
+}
+// Trigger the initial display of all categories
+showCategory('all');
+                    </script>
                     <div class="col-md-3 product-item-list">
                         <div class="heading-product-list">
                             <h1>
@@ -137,7 +211,7 @@
                             </h1>
                         </div>
                         <div class="cat-section">
-                            <div class="category" id="category1">
+                            <div class="category-list" id="category1">
                                 <div class="category-header" onclick="toggleCategory('category1')">
                                     PIPES & TUBES
                                     <span class="collapsible-icon">
@@ -153,7 +227,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="category" id="category2">
+                            <div class="category-list" id="category2">
                                 <div class="category-header" onclick="toggleCategory('category2')">
                                     Flanges
                                     <span class="collapsible-icon">
@@ -250,7 +324,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="category" id="category3">
+                            <div class="category-list" id="category3">
                                 <div class="category-header" onclick="toggleCategory('category3')">
                                     Butt-weld Fittings
                                     <span class="collapsible-icon">
@@ -275,7 +349,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="category" id="category4">
+                            <div class="category-list" id="category4">
                                 <div class="category-header" onclick="toggleCategory('category4')">
                                     BARS & WIRES
                                     <span class="collapsible-icon">
@@ -309,7 +383,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="category" id="category5">
+                            <div class="category-list" id="category5">
                                 <div class="category-header" onclick="toggleCategory('category5')">
                                     FASTENERS
                                     <span class="collapsible-icon">
@@ -337,7 +411,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="category" id="category6">
+                            <div class="category-list" id="category6">
                                 <div class="category-header" onclick="toggleCategory('category6')">
                                     Structural Products
                                     <span class="collapsible-icon">
