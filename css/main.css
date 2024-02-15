@@ -283,8 +283,8 @@ body {
 /* Introduction Section */
 
 .introduction-section {     
-    width: 100%;    
-    padding: 50px;    
+    width: 100%;  
+       
 }
 
 .intro-heading {
@@ -292,6 +292,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 50px;
 }
 
 .intro-heading h2 {
@@ -321,7 +322,7 @@ body {
 .intro-contain {
     padding: 30px;
     background-color: #2185a0;
-    border-radius: 10px;
+    
     color: white;
     margin-top: 20px;
 }

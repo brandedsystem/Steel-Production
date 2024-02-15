@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    box-sizing: 0;
+    margin: 0;
+}
+body {
+    scroll-behavior: smooth;
+    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif' !important;
+}
+/* Body section main */
+
+.product-section1 {
+    padding: 50px;
+}
+/* Product list navbar */
+
+.category {
+    display: block;
+    position: relative;
+    padding: 10px;
+}
+.category ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.btn-nav {
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+    background-color: #2185a0;
+}
+.btn-nav:hover {
+    background-color: #25a989;
+    transform: scaleX(1);
+    transition: all 1s easy-in-out;
+    color: white;
+    font-weight: bolder;
+}
+.btn-nav:hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #2185a0;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/* --------------------------------- */
+
+/* Left Side product contain */
+
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.card-body {
+    padding: 20px;
+}
+.card-footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+/***** right side product list *****/
+
+.product-item-list {
+    width: 100%;
+    margin: 0;
+    padding: 0px !important;
+    scroll-behavior: smooth;
+}
+.heading-product-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    color: black;
+    text-transform: uppercase;
+}
+.heading-product-list h1 {
+    text-align: center;
+    line-height: normal;
+    font-size: 26px;
+    padding: 10px;
+}
+.cat-section {
+    padding-right: 20px;
+    padding-left: 20px;
+    z-index: -1;
+}
+.category {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* Style for the category header */
+
+.category-header {
+    background-color: #f9f9f9;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+    border: 1px solid #ccc;
+}
+/* Style for the category content (product list) */
+
+.category-content {
+    display: none;
+    padding: 10px;
+}
+/* Style for the product list items */
+
+.product-item {
+    margin-bottom: 5px;
+}
+/* Style for the collapsible icon */
+
+.collapsible-icon {
+    float: right;
+}
+/***** End right side product list *****/
+
+/***** 3 Products showing deatails *****/
+
+#pro-3 {
+    width: 100%;
+    position: relative;
+    border-top: 2px solid black;
+}
+.pro-3-product {
+    position: relative !important;
+    background-color: rgb(237 237 237 / 50%);
+    display: flex;
+    justify-content: center;
+    padding: 30px !important;
+    border-radius: 20px !important;
+}
+.pro-3-contain {
+    box-shadow: 0 0 10px rgba(43, 34, 34, 0.6) !important;
+    border-radius: 10px;
+}
+.card-pro {
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    transition: box-shadow 0.3s ease-in-out;
+    padding: 0;
+    margin: 0;
+}
+.card-pro:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.img-pro {
+    position: relative;
+    overflow: hidden;
+}
+.img-pro img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.card-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: medium;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    .card-pro {
+        margin-bottom: 15px;
+    }
+    .view-btn1 {
+        bottom: 5px;
+        right: 5px;
+        padding: 3px 6px;
+    }
+}
+/***** End 3 Products showing deatails *****/
