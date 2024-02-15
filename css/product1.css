@@ -7,33 +7,52 @@ body {
     scroll-behavior: smooth;
     font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif' !important;
 }
-
 /* Body section main */
-.product-section1 {
-   
-}
 
+.product-section1 {}
 /* Product list navbar */
+
 .category {
     display: block;
     position: relative;
-    padding: 10px;    
+    padding: 10px;
 }
-
 .category ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-
 }
-
-.category ul>li> .btn {
+.category ul>li>.btn {
     width: auto;
     padding: 10px;
     border-radius: 1px solid red;
 }
-
 /* --------------------------------- */
+
+/* Left Side product contain */
+
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.card-body {
+    padding: 20px;
+}
+.card-footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+}
+
 
 
 /***** right side product list *****/
@@ -41,8 +60,7 @@ body {
 .product-item-list {
     width: 100%;
     margin: 0;
-    padding: 0px !important;  
-    
+    padding: 0px !important;
     scroll-behavior: smooth;
 }
 .heading-product-list {
@@ -95,126 +113,7 @@ body {
 .collapsible-icon {
     float: right;
 }
-/***** End Left side product list *****/
-
-/***** right side product details *****/
-
-.product-item-details {
-    padding: 0px !important;
-    height: 100%;
-    position: relative;
-}
-.heading-product {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-    color: black;
-    text-transform: uppercase;
-}
-.heading-product h1 {
-    text-align: center;
-    line-height: normal;
-}
-.heading-product {
-    text-align: center;
-    margin-bottom: 20px;
-}
-.product-item-list-contain {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-/* Product card styles */
-
-.custom-card {
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    width: 200px;
-    height: 300px !important;
-    box-shadow: 0 0 10px rgba(32, 043, 190, 0.9);
-    transition: box-shadow 0.3s ease-in-out;
-}
-.custom-card:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-}
-.card-img {
-    position: relative;
-    overflow: hidden;
-    height: 90%;
-}
-.card-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-.view-btn {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-/* Pagination styles */
-
-.pagination-wrap {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-.pagination {
-    text-align: center;
-    margin-top: 20px;
-}
-.pagination span {
-    width: 30px;
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    margin: 0 5px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-.pagination span:hover {
-    background-color: #2980b9;
-    border-radius: 20px;
-    transition: 2s ease-in-out;
-}
-.pagination button {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    margin: 0 5px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-.pagination button:hover {
-    background-color: #2980b9;
-    border-radius: 20px;
-    transition: 2s ease-in-out;
-}
-/* Responsive styles */
-
-@media (max-width: 768px) {
-    .custom-card {
-        margin-bottom: 15px;
-    }
-    .pagination button {
-        padding: 6px 12px;
-    }
-}
-/***** End right side product details *****/
+/***** End right side product list *****/
 
 /***** 3 Products showing deatails *****/
 
