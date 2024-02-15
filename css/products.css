@@ -1,6 +1,6 @@
 * {
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     margin: 0;
 }
 body {
@@ -10,9 +10,14 @@ body {
 /* Body section main */
 
 .product-section1 {
-    padding: 50px;
+    padding: 0;
+    position: relative;
+    margin: 0;
 }
 /* Product list navbar */
+.product-item-details {
+    border-right: 5px solid black;
+}
 
 .category {
     display: block;
@@ -30,6 +35,8 @@ body {
     margin: 0;
     text-align: justify;
     justify-content: space-around;
+    margin-left: 15px;
+
 }
 
 .btn-nav {
@@ -61,8 +68,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 10px;
-    border: 2px solid red;
+    
+
 }
 
 .product-card {
