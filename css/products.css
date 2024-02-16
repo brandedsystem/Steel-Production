@@ -106,7 +106,8 @@ body {
 .product-card-body {
     padding: 0px;
     position: relative;
-    max-height: 150px;
+    width: 100%;
+    height: 65%;
     position: relative;
 }
 .product-image {
@@ -114,6 +115,7 @@ body {
     height: 100%;
     /* Adjust the maximum height as needed */
     object-fit: cover;
+    object-position: center;
 }
 
 /* Media query for smaller screens */
