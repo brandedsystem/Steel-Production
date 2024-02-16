@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-            <meta content="width=device-width, initial-scale=1.0" name="viewport">
-                <style>
-                    * {
-                        padding: 0;
-                        margin: 0;
-                        box-sizing: border-box;
-                    }
-                    /* Your CSS styles here */
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f8f9fa;
@@ -17,7 +17,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            
             flex-direction: row;
         }
 
@@ -61,76 +60,82 @@
 
         .product-image {
             width: 100%;
-            max-height: 300px; /* Adjust the maximum height as needed */
-            object-fit: cover; /* Maintain the aspect ratio and cover the container */
+            max-height: 300px;
+            object-fit: cover;
         }
-        /* Add this to your existing styles or style tag */
-.btn {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease-in-out;
-}
 
-.btn:hover {
-    background-color: #0056b3;
-}
-                </style>
-                <title>
-                    Product List
-                </title>
-            </meta>
-        </meta>
-    </head>
-    <body>
+        /* Add this to your existing styles or style tag */
+        .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .categories-buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 10px;
+        }
+
+        .categories-buttons button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .categories-buttons button.active {
+            background-color: #0056b3;
+        }
+    </style>
+    <title>Product List</title>
+</head>
+<body>
+    <div class="product-item-list-contain" id="cardContainer">
+        <div class="categories-buttons">
+            <button data-category="all" onclick="showCategory('all')" class="active">All</button>
+            <button data-category="pipe-tube-pro" onclick="showCategory('pipe-tube-pro')">Pipes & Tubes</button>
+            <button data-category="Flanges-pro" onclick="showCategory('Flanges-pro')">Flanges</button>
+            <!-- Add more buttons for other categories -->
+        </div>
         <div class="product-item-list-contain" id="cardContainer">
-            <div class="categories-buttons">
-                <button data-category="all" onclick="showCategory('all')">
-                    All
-                </button>
-                <button data-category="pipe-tube-pro" onclick="showCategory('pipe-tube-pro')">
-                    Pipes & Tubes
-                </button>
-                <button data-category="Flanges-pro" onclick="showCategory('Flanges-pro')">
-                    Flanges
-                </button>
-                <!-- Add more buttons for other categories -->
-            </div>
-            <div class="product-item-list-contain" id="cardContainer">
-                <div class="products-all" id="all-product-list">
-                </div>
-                <!-- Placeholder for product details -->
-                <div id="product-details">
-                    <div class="product-card">
-                        <div class="product-card-header" id="product-title">
-                        </div>
-                        <div class="product-card-body" id="product-description">
-                            <img alt="" class="product-image" src="">
-                            </img>
-                        </div>
+            <div class="products-all" id="all-product-list"></div>
+            <!-- Placeholder for product details -->
+            <div id="product-details">
+                <div class="product-card">
+                    <div class="product-card-header" id="product-title"></div>
+                    <div class="product-card-body" id="product-description">
+                        <img alt="" class="product-image" src="">
                     </div>
                 </div>
             </div>
         </div>
-        <script>
-            // Your product dictionary with image URLs
+    </div>
+    <script>
+        // Your product dictionary with image URLs
         const productDictionary = {
-    'pipe-tube-pro': [
-        { name: 'Product 1', imageUrl: './Images/Products/product1.jpg', buttonText: 'Details', buttonUrl: '/product1-page.html' },
-        { name: 'Product 2', imageUrl: './Images/Products/SS Flange.jpg', buttonText: 'Read More', buttonUrl: 'index.html' },
-        // Add more products as needed
-    ],
-    'Flanges-pro': [
-        { name: 'Product A', imageUrl: './Images/Products/DISH END.jpg', buttonText: 'Details', buttonUrl: '/productA-page.html' },
-        { name: 'Product B', imageUrl: './Images/Products/productB.jpg', buttonText: 'Details', buttonUrl: '/productB-page.html' },
-        // Add more products as needed
-    ],
-    // Repeat for other product categories
-};
-
+            'pipe-tube-pro': [
+                { name: 'Product 1', imageUrl: './Images/Products/product1.jpg', buttonText: 'Details', buttonUrl: '/product1-page.html' },
+                { name: 'Product 2', imageUrl: './Images/Products/SS Flange.jpg', buttonText: 'Read More', buttonUrl: 'index.html' },
+                // Add more products as needed
+            ],
+            'Flanges-pro': [
+                { name: 'Product A', imageUrl: './Images/Products/DISH END.jpg', buttonText: 'Details', buttonUrl: '/productA-page.html' },
+                { name: 'Product B', imageUrl: './Images/Products/productB.jpg', buttonText: 'Details', buttonUrl: '/productB-page.html' },
+                // Add more products as needed
+            ],
+            // Repeat for other product categories
+        };
 
         // Function to display product details when clicked
         function displayProductDetails(categoryId, productId) {
@@ -143,13 +148,20 @@
             productTitle.textContent = selectedProduct.name;
             productImage.src = selectedProduct.imageUrl;
 
-            productDetailsContainer.style.display = 'block';
+            productDetailsContainer.style.display = 'flex';
         }
 
         // Function to show products for a specific category
         function showCategory(categoryId) {
             const allProductContainer = document.getElementById('all-product-list');
             const productDetailsContainer = document.getElementById('product-details');
+            const buttons = document.querySelectorAll('.categories-buttons button');
+
+            // Remove the 'active' class from all buttons
+            buttons.forEach(button => button.classList.remove('active'));
+
+            // Add the 'active' class to the clicked button
+            event.target.classList.add('active');
 
             // Hide the product details container
             productDetailsContainer.style.display = 'none';
@@ -168,12 +180,12 @@
                 productItem.classList.add('product-item', 'product-card');
                 productItem.innerHTML = `
                     <div class="product-card-header" onclick="displayProductDetails('${categoryId}', ${index})">
-        ${product.name}
-    </div>
-    <div class="product-card-body">
-        <img src="${product.imageUrl}" alt="${product.name}" class="product-image">
-        <a href="#" class="btn" onclick="redirectToProductPage('${product.buttonUrl}')">${product.buttonText}</a>
-    </div>
+                        ${product.name}
+                    </div>
+                    <div class="product-card-body">
+                        <img src="${product.imageUrl}" alt="${product.name}" class="product-image">
+                        <a href="#" class="btn" onclick="redirectToProductPage('${product.buttonUrl}')">${product.buttonText}</a>
+                    </div>
                 `;
 
                 allProductContainer.appendChild(productItem);
@@ -182,12 +194,14 @@
             // Show the selected product container
             allProductContainer.style.display = 'block';
         }
-// Function to redirect to the product page
-function redirectToProductPage(url) {
-    window.location.href = url;
-}
+
+        // Function to redirect to the product page
+        function redirectToProductPage(url) {
+            window.location.href = url;
+        }
+
         // Trigger the initial display of all categories
         showCategory('all');
-        </script>
-    </body>
+    </script>
+</body>
 </html>
