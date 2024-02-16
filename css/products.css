@@ -9,16 +9,22 @@ body {
 }
 /* Body section main */
 
+#products {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
 .product-section1 {
     padding: 0;
     position: relative;
     margin: 0;
 }
 /* Product list navbar */
+
 .product-item-details {
     border-right: 5px solid black;
 }
-
 .category {
     display: block;
     position: relative;
@@ -36,19 +42,18 @@ body {
     text-align: justify;
     justify-content: space-around;
     margin-left: 15px;
-
 }
+
 
 .btn-nav {
     color: #fff;
     border: none;
-    padding: 10px ;
+    padding: 10px;
     cursor: pointer;
     font-size: 16px;
     position: relative;
     background-color: #2185a0;
     border-radius: 10px;
-
 }
 .btn-nav:hover {
     background-color: #25a989;
@@ -57,105 +62,108 @@ body {
     color: white;
     font-weight: bolder;
 }
-
 /* --------------------------------- */
 
 /* Left Side product contain */
 
 /* Add this to your existing styles or style tag */
+
 /* Add this to your existing styles or style tag */
+
 #all-product-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
-
 }
-
 .product-card {
-    width: 300px;
+    width: 200px;
     margin: 10px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    height: 300px;
 }
-
 .product-card-header {
     background-color: #007bff;
     color: #fff;
     padding: 10px;
     text-align: center;
 }
-
 .product-card-body {
-    padding: 20px;
+    padding: 0px;
+    position: relative;
+    max-height: 150px;
 }
-
 .product-image {
     width: 100%;
-    max-height: 150px; /* Adjust the maximum height as needed */
-    object-fit: cover;
+    height: 100%;
+    /* Adjust the maximum height as needed */
+    object-fit: cover;    
 }
-
 #product-details {
     width: 100%;
-    max-width: 400px; /* Adjust the maximum width as needed */
+    max-width: 400px;
+    /* Adjust the maximum width as needed */
     border: 1px solid #ccc;
-    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     margin: 10px;
     display: none;
 }
-
 /* Media query for smaller screens */
+
 @media (max-width: 768px) {
     .product-card {
-        width: calc(100% - 20px); /* Adjust as needed, considering margin */
+        width: calc(100% - 20px);
+        /* Adjust as needed, considering margin */
     }
 }
 
-.btn {
+.product-redirect-btn {
+    text-align: center;
+    border-radius: 1px solid red;
+    position: relative;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.btn-pro {
     display: inline-block;
-    padding: 8px 16px;
+    padding: 10px;
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
-    transition: background-color 0.3s ease-in-out;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;    
+    align-items: center;
 }
-.btn:hover {
+.btn-pro:hover {
     background-color: #0056b3;
 }
 /***** right side product list *****/
 
 .product-item-list {
     width: 100%;
-    margin: 0;
-    padding: 0px !important;
-    scroll-behavior: smooth;
 }
 .heading-product-list {
     position: relative;
-    display: flex;
+    background-color: #2185a0;
     justify-content: center;
-    width: 100%;
     margin: 0;
-    color: black;
     text-transform: uppercase;
 }
 .heading-product-list h1 {
     text-align: center;
     line-height: normal;
-    font-size: 26px;
-    padding: 10px;
+    font-size: 30px;
+    padding: 14px;
+    color: white;
 }
 .cat-section {
-    padding-right: 20px;
-    padding-left: 20px;
-    z-index: -1;
+    padding: 20px;
 }
 .category-list {
     margin-top: 10px;

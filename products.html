@@ -6,8 +6,7 @@
                 <title>
                     Steel Production
                 </title>
-                <link href="./css/products.css" rel="stylesheet" type="text/css">                   
-                   
+                <link href="./css/products.css" rel="stylesheet" type="text/css">
                     <link href="./css/main.css" rel="stylesheet" type="text/css">
                         <!-- Bootstrap JS (Popper.js and Bootstrap JS) -->
                         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
@@ -69,9 +68,9 @@
             </nav>
         </header>
         <section id="products">
-            <div class="container p-0 m-0 product-section1">
+            <div class="container-fluid p-0 m-0 product-section1">
                 <div class="row p-0 m-0">
-                    <div class="col-md-9 p-0 m-0 product-item-details">
+                    <div class="col-lg-9 p-0 m-0 product-item-details">
                         <div class="row cateory">
                             <div class="row category">
                                 <ul>
@@ -188,9 +187,13 @@ function showCategory(categoryId) {
         ${product.name}
     </div>
     <div class="product-card-body">
-        <img src="${product.imageUrl}" alt="${product.name}" class="product-image">
-        <a href="#" class="btn" onclick="redirectToProductPage('${product.buttonUrl}')">${product.buttonText}</a>
+        <img src="${product.imageUrl}" alt="${product.name}" class="product-image">        
     </div>
+    <div class="product-redirect-btn">
+    <a href="#" class="btn-pro" onclick="redirectToProductPage('${product.buttonUrl}')">${product.buttonText}</a>
+    </<div>
+        
+    
                 `;
         allProductContainer.appendChild(productItem);
     });
@@ -204,7 +207,7 @@ function redirectToProductPage(url) {
 // Trigger the initial display of all categories
 showCategory('all');
                     </script>
-                    <div class="col-md-3 p-0 m-0 product-item-list">
+                    <div class="col-lg-3 p-0 m-0 product-item-list">
                         <div class="heading-product-list">
                             <h1>
                                 Product List
