@@ -1,6 +1,6 @@
 * {
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     margin: 0;
 }
 body {
@@ -9,15 +9,29 @@ body {
 }
 /* Body section main */
 
+#products {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
 .product-section1 {
-    padding: 50px;
+    padding: 0;
+    position: relative;
+    margin: 0;
 }
 /* Product list navbar */
 
+.product-item-details {
+    border-right: 5px solid black;
+}
 .category {
     display: block;
     position: relative;
     padding: 10px;
+    text-align: justify;
+    background-color: #2185a0;
+    margin-right: 5px;
 }
 .category ul {
     display: flex;
@@ -25,15 +39,20 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: justify;
+    justify-content: space-around;
+    margin-left: 15px;
 }
+
 .btn-nav {
     color: #fff;
     border: none;
-    padding: 10px 15px;
+    padding: 10px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
     position: relative;
     background-color: #2185a0;
+    border-radius: 10px;
 }
 .btn-nav:hover {
     background-color: #25a989;
@@ -42,74 +61,119 @@ body {
     color: white;
     font-weight: bolder;
 }
-.btn-nav:hover::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    background-color: #2185a0;
-    bottom: 0;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s ease-in-out;
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
 /* --------------------------------- */
 
 /* Left Side product contain */
 
-.card {
-    width: 300px;
+/* Add this to your existing styles or style tag */
+
+/* Add this to your existing styles or style tag */
+
+#all-product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#product-details {
+    width: 100%;
+    max-width: 400px;
+    /* Adjust the maximum width as needed */
+    border: 1px solid #ccc;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    margin: 10px;
+    display: none;
+}
+
+.product-card {
+    width: 200px;
+    margin: 10px;
+    box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    height: 310px;
+    overflow: hidden;
 }
-.card-header {
-    background-color: #007bff;
+.product-card-header {
+    background-color: #2185a0;
+    font-size: bold;
     color: #fff;
     padding: 10px;
     text-align: center;
+    position: relative;
+
 }
-.card-body {
-    padding: 20px;
+.product-card-body {
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    height: 65%;
+    position: relative;
 }
-.card-footer {
-    background-color: #f8f9fa;
-    padding: 10px;
+.product-image {
+    width: 100%;
+    height: 100%;
+    /* Adjust the maximum height as needed */
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Media query for smaller screens */
+
+@media (max-width: 768px) {
+    .product-card {
+        width: calc(100% - 20px);
+        /* Adjust as needed, considering margin */
+    }
+}
+.product-redirect-btn {
     text-align: center;
+    border-radius: 1px solid red;
+    position: relative;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.btn-pro {
+    display: block;
+    padding: 10px;
+    background-color: #2185a0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+    align-items: center;
+}
+.btn-pro:hover {
+    background-color: #25a989;
+    transform: scaleX(1);
 }
 /***** right side product list *****/
 
 .product-item-list {
     width: 100%;
-    margin: 0;
-    padding: 0px !important;
-    scroll-behavior: smooth;
 }
 .heading-product-list {
     position: relative;
-    display: flex;
+    background-color: #2185a0;
     justify-content: center;
-    width: 100%;
     margin: 0;
-    color: black;
     text-transform: uppercase;
 }
 .heading-product-list h1 {
     text-align: center;
     line-height: normal;
-    font-size: 26px;
-    padding: 10px;
+    font-size: 30px;
+    padding: 14px;
+    color: white;
 }
 .cat-section {
-    padding-right: 20px;
-    padding-left: 20px;
-    z-index: -1;
+    padding: 20px;
 }
-.category {
+.category-list {
     margin-top: 10px;
     margin-bottom: 10px;
 }
