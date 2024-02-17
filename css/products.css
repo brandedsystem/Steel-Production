@@ -93,15 +93,18 @@ body {
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-    height: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    height: 310px;
+    overflow: hidden;
 }
 .product-card-header {
-    background-color: #007bff;
+    background-color: #2185a0;
+    font-size: bold;
     color: #fff;
     padding: 10px;
     text-align: center;
     position: relative;
+
 }
 .product-card-body {
     padding: 0px;
@@ -136,7 +139,7 @@ body {
 .btn-pro {
     display: block;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #2185a0;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
@@ -145,7 +148,8 @@ body {
     align-items: center;
 }
 .btn-pro:hover {
-    background-color: #0056b3;
+    background-color: #25a989;
+    transform: scaleX(1);
 }
 /***** right side product list *****/
 
