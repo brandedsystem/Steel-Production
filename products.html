@@ -1,459 +1,541 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-            <meta content="width=device-width, initial-scale=1.0" name="viewport">
-                <title>
-                    Steel Production
-                </title>
-                <link href="./css/products.css" rel="stylesheet" type="text/css">
-                    <link href="./css/main.css" rel="stylesheet" type="text/css">
-                        <!-- Bootstrap JS (Popper.js and Bootstrap JS) -->
-                        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
-                        </script>
-                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js">
-                        </script>
-                        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-                        </link>
-                    </link>
-                </link>
-            </meta>
-        </meta>
-    </head>
-    <body>
-        <!-- Header Section -->
-        <header id="header container-fluid">
-            <!-- Fixed Navbar -->
-            <nav class="navbar navbar-expand-lg p-0">
-                <div class="container">
-                    <div class="logo">
-                        <a class="navbar-brand" href="Index.html">
-                            <img src="./Images/logo.jpg"/>
-                        </a>
-                    </div>
-                    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
-                        <span class="navbar-toggler-icon">
-                        </span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="Index.html">
-                                    Home
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="products.html">
-                                    Products
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="product.html">
-                                    Material
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="aboutus.html">
-                                    About Us
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="ContactUs.html">
-                                    Contact
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>
+        Steel Production
+    </title>
+    <link href="./css/products.css" rel="stylesheet" type="text/css">
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap JS (Popper.js and Bootstrap JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js">
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    </link>
+    </link>
+    </link>
+    </meta>
+    </meta>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header id="header container-fluid">
+        <!-- Fixed Navbar -->
+        <nav class="navbar navbar-expand-lg p-0">
+            <div class="container">
+                <div class="logo">
+                    <a class="navbar-brand" href="Index.html">
+                        <img src="./Images/logo.jpg" />
+                    </a>
                 </div>
-            </nav>
-        </header>
-        <section id="products">
-            <div class="container-fluid p-0 m-0 product-section1">
-                <div class="row p-0 m-0">
-                    <div class="col-lg-9 p-0 m-0 product-item-details">
-                        <div class="row cateory">
-                            <div class="row category">
-                                <ul>
-                                    <li>
-                                        <button class="btn-nav" data-category="all" onclick="showCategory('all')">
-                                            All
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button class="btn-nav" data-category="Butt-weld-pro" onclick="showCategory('Butt-weld-pro')">
-                                            Butt-weld Fittings
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button class="btn-nav" data-category="Flanges-pro" onclick="showCategory('Flanges-pro')">
-                                            Flanges
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button class="btn-nav" data-category="Fasteners-pro" onclick="showCategory('Fasteners-pro')">
-                                            Fasteners
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button class="btn-nav" data-category="pipe-tube-pro" onclick="showCategory('pipe-tube-pro')">
-                                            Pipes & Tubes
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button class="btn-nav" data-category="Bar&wires-pro" onclick="showCategory('Bar&wires-pro')">
-                                            Bars & Wires
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button class="btn-nav" data-category="Structural-Products" onclick="showCategory('Structural-Products')">
-                                            Structural Products
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
+                <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">
+                                Products
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">
+                                Material
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ContactUs.html">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="products">
+        <div class="container-fluid p-0 m-0 product-section1">
+            <div class="row p-0 m-0">
+                <div class="col-lg-9 p-0 m-0 product-item-details">
+                    <div class="row cateory">
+                        <div class="row category">
+                            <ul>
+                                <li>
+                                    <button class="btn-nav" data-category="all" onclick="showCategory('all')">
+                                        All
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="btn-nav" data-category="Butt-weld-pro" onclick="showCategory('Butt-weld-pro')">
+                                        Fittings
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="btn-nav" data-category="Flanges-pro" onclick="showCategory('Flanges-pro')">
+                                        Flanges
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="btn-nav" data-category="Fasteners-pro" onclick="showCategory('Fasteners-pro')">
+                                        Fasteners
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="btn-nav" data-category="pipe-tube-pro" onclick="showCategory('pipe-tube-pro')">
+                                        Pipes & Tubes
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="btn-nav" data-category="Bar&wires-pro" onclick="showCategory('Bar&wires-pro')">
+                                        Bars & Wires
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="btn-nav" data-category="Structural-Products" onclick="showCategory('Structural-Products')">
+                                        Structural Products
+                                    </button>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="product-item-list-contain" id="cardContainer">
-                            <div class="products-all" id="all-product-list">
-                            </div>
-                            <!-- Placeholder for product details -->
-                            <div id="product-details">
-                                <div class="product-card">
-                                    <div class="product-card-header" id="product-title">
-                                    </div>
-                                    <div class="product-card-body" id="product-description">
-                                        <img alt="" class="product-image" src="">
-                                        </img>
-                                    </div>
+                    </div>
+                    <div class="product-item-list-contain" id="cardContainer">
+                        <div class="products-all" id="all-product-list">
+                        </div>
+                        <!-- Placeholder for product details -->
+                        <div id="product-details">
+                            <div class="product-card">
+                                <div class="product-card-header" id="product-title">
+                                </div>
+                                <div class="product-card-body" id="product-description">
+                                    <img alt="" class="product-image" src="">
+                                    </img>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <script>
-                        const productDictionary = {
-    'pipe-tube-pro': [{
-            name: 'Welded',
-            imageUrl: './Images/Pipe&Tube/welded2.jpg',
-            buttonText: 'Show Details',
-            buttonUrl: '/product1-page.html'
-        }, {
-            name: 'Welded Pipe',
-            imageUrl: './Images/Pipe&Tube/welded-pipes1.jpg',
-            buttonText: 'Show Details',
-            buttonUrl: 'index.html'
-        },
-        {
-            name: 'Stainless Steel Pipe',
-            imageUrl: './Images/Pipe&Tube/stainless-steel-pipe.png',
-            buttonText: 'Show Details',
-            buttonUrl: 'index.html'
-        },
-        {
-            name: 'Welded Vs Seamless',
-            imageUrl: './Images/Pipe&Tube/welded vs seamless.jpg',
-            buttonText: 'Show Details',
-            buttonUrl: 'index.html'
-        },
-        // Add more products as needed
-    ],
+                </div>
+                <script>
+                const productDictionary = {
+                        'pipe-tube-pro': [{
+                                name: 'Welded',
+                                imageUrl: './Images/Pipe&Tube/welded2.jpg',
+                                buttonText: 'Show Details',
+                                buttonUrl: '/product1-page.html'
+                            }, {
+                                name: 'Welded Pipe',
+                                imageUrl: './Images/Pipe&Tube/welded-pipes1.jpg',
+                                buttonText: 'Show Details',
+                                buttonUrl: 'index.html'
+                            },
+                            {
+                                name: 'Stainless Steel Pipe',
+                                imageUrl: './Images/Pipe&Tube/stainless-steel-pipe.png',
+                                buttonText: 'Show Details',
+                                buttonUrl: 'index.html'
+                            },
+                            {
+                                name: 'Welded Vs Seamless',
+                                imageUrl: './Images/Pipe&Tube/welded vs seamless.jpg',
+                                buttonText: 'Show Details',
+                                buttonUrl: 'index.html'
+                            },
+                            // Add more products as needed
+                        ],
 
-    'Bar&wires-pro': [{ 
-            name: 'Bright Bar',
-            imageUrl: './Images/Bars&Wire/Bright Bar.jpg',
-            buttonText: 'Show Details',
-            buttonUrl: 'index.html'
-
-    },
-    { 
-            name: 'Hex Bar',
-            imageUrl: './Images/Bars&Wire/Hex Bar.jpg',
-            buttonText: 'Show Details',
-            buttonUrl: 'index.html'
-
-    },
-    { 
-            name: 'Square Bar',
-            imageUrl: './Images/Bars&Wire/Square bar.jpg',
-            buttonText: 'Show Details',
-            buttonUrl: 'index.html'
-
-    },
-    { 
-            name: 'Round Bar',
-            imageUrl: './Images/Bars&Wire/ss round bar.jpg',
-            buttonText: 'Show Details',
-            buttonUrl: 'index.html'
-
-    },
-    { 
-            name: 'Wire Rode',
-            imageUrl: './Images/Bars&Wire/ss wire rode.jpg',
-            buttonText: 'Show Details',
-            buttonUrl: 'index.html'
-
-    },
-    { 
-            name: 'Round Bar',
-            imageUrl: './Images/Bars&Wire/Stainless-Steel-Round-Bars.jpg',
-            buttonText: 'Show Details',
-            buttonUrl: 'index.html'
-
-    },
-    { 
-            name: 'Wire',
-            imageUrl: './Images/Bars&Wire/stainless-steel-wire.jpg',
-            buttonText: 'Show Details',
-            buttonUrl: 'index.html'
-
-    },
-    ],
+                        'Structural-Products': [{
+                                name: 'Flat',
+                                imageUrl: './Images/Structural product/stainless-steel-flat.jpg',
+                                buttonText: 'Show Details',
+                                buttonUrl: '/product1-page.html'
+                            }, {
+                                name: 'Angle',
+                                imageUrl: './Images/Structural product/stainless-steel-angles.jpg',
+                                buttonText: 'Show Details',
+                                buttonUrl: 'index.html'
+                            },
+                            {
+                                name: 'Plates',
+                                imageUrl: './Images/Structural product/plate.jpg',
+                                buttonText: 'Show Details',
+                                buttonUrl: 'index.html'
+                            },
+                            {
+                                name: 'Hollow',
+                                imageUrl: './Images/Structural product/Hollow-Steel-Pipe.jpg',
+                                buttonText: 'Show Details',
+                                buttonUrl: 'index.html'
+                            },
+                            {
+                                name: 'Beams',
+                                imageUrl: './Images/Structural product/metal-beams.jpg',
+                                buttonText: 'Show Details',
+                                buttonUrl: 'index.html'
+                            },
+                            {
+                                name: 'Europa Beams',
+                                imageUrl: './Images/Structural product/e-beams.jpg',
+                                buttonText: 'Show Details',
+                                buttonUrl: 'index.html'
+                            },
+                            {
+                                name: 'Pipe',
+                                imageUrl: './Images/Structural product/304-stainless-steel-pipe.jpg',
+                                buttonText: 'Show Details',
+                                buttonUrl: 'index.html'
+                            },
+                            // Add more products as needed
+                        ],
 
 
-    'Fasteners-pro': [{
-            name: 'Bolt',
-            imageUrl: './Images/Fasteners/bolts.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/product1-page.html'
-        }, {
-            name: 'Nuts',
-            imageUrl: './Images/Fasteners/nuts.jpg',
-            buttonText: 'Read More',
-            buttonUrl: 'index.html'
-        },
-        {
-            name: 'Studs',
-            imageUrl: './Images/Fasteners/Studs.jpg',
-            buttonText: 'Read More',
-            buttonUrl: 'index.html'
-        },
-        {
-            name: 'Threaded Bar',
-            imageUrl: './Images/Fasteners/Threaded Bars.jpg',
-            buttonText: 'Read More',
-            buttonUrl: 'index.html'
-        },
-        {
-            name: 'Washers',
-            imageUrl: './Images/Fasteners/Washers.jpg',
-            buttonText: 'Read More',
-            buttonUrl: 'index.html'
-        },
-        {
-            name: 'U-Bolts',
-            imageUrl: './Images/Fasteners/U-bolts.jpg',
-            buttonText: 'Read More',
-            buttonUrl: 'index.html'
-        },
-        // Add more products as needed
-    ],
-    'Flanges-pro': [{
-            name: 'Bleed Ring Flange',
-            imageUrl: './Images/Flanges/Bleed Ring Flange.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productA-page.html'
-        }, {
-            name: 'Blind Flanges',
-            imageUrl: './Images/Flanges/Blind Flange.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Expander Flange',
-            imageUrl: './Images/Flanges/expander-flange.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Flange Adapter',
-            imageUrl: './Images/Flanges/Flange Adapter.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Flange Olet',
-            imageUrl: './Images/Flanges/Flange Olet.png',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Flat Face Flange',
-            imageUrl: './Images/Flanges/flat-face-flangee.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Forged Flange',
-            imageUrl: './Images/Flanges/Forged Flange.gif',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Slip on Flanges',
-            imageUrl: './Images/Flanges/Slip-on Flange.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Weld Neck flanges',
-            imageUrl: './Images/Flanges/weld-neck-flange.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Spectacle Blind Flanges',
-            imageUrl: './Images/Flanges/spectacle-blind-206a.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Orifice Flanges',
-            imageUrl: './Images/Flanges/orifice-flange.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Threaded Flanges',
-            imageUrl: './Images/Flanges/Threaded_Flange.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Socket Weld Flanges',
-            imageUrl: './Images/Flanges/socket-weld-flanges.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Plate Flange',
-            imageUrl: './Images/Flanges/plate-flanges.jpeg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'High Hub Flanges',
-            imageUrl: './Images/Flanges/high-hub-blind-flanges-supplier.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Groove & Tongue ',
-            imageUrl: './Images/Flanges/tongue-and-groove-flange-flanges.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Square Flange',
-            imageUrl: './Images/Flanges/square-flanges.jpeg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Ring Type Joint',
-            imageUrl: './Images/Flanges/ring-type-joint-flange.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Loose Flange',
-            imageUrl: './Images/Flanges/loose-flanges.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Nipo Flange',
-            imageUrl: './Images/Flanges/stainless-steel-nipo-flange.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Lap Joint Flange',
-            imageUrl: './Images/Flanges/Lap Joint Flange.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Weldo Flange',
-            imageUrl: './Images/Flanges/Weldo Flange.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Forged Flanges',
-            imageUrl: './Images/Flanges/Forged Flange.gif',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Raised Flange',
-            imageUrl: './Images/Flanges/Raised Flange.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Male Female Flange',
-            imageUrl: './Images/Flanges/Male Female Flange.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Ring Spacers Flange',
-            imageUrl: './Images/Flanges/Ring Spacers Flange.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        {
-            name: 'Non Standard Flange',
-            imageUrl: './Images/Flanges/Non Standard Flange.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-          {
-            name: 'Spade Flange',
-            imageUrl: './Images/Flanges/Spade Flange.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-          {
-            name: 'Hydraulic SAE',
-            imageUrl: './Images/Flanges/Hydraulic SAE.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-          {
-            name: 'Opening Flange',
-            imageUrl: './Images/Flanges/Opening Flange.jpg',
-            buttonText: 'Read More',
-            buttonUrl: '/productB-page.html'
-        },
-        // Add more products as needed
-    ],
-    // Repeat for other product categories
-};
-// Function to display product details when clicked
-function displayProductDetails(categoryId, productId) {
-    const productDetailsContainer = document.getElementById('product-details');
-    const productTitle = document.getElementById('product-title');
-    const productImage = document.querySelector('.product-image');
-    const selectedProduct = productDictionary[categoryId][productId];
-    productTitle.textContent = selectedProduct.name;
-    productImage.src = selectedProduct.imageUrl;
-    productDetailsContainer.style.display = 'block';
-}
-// Function to show products for a specific category
-function showCategory(categoryId) {
-    const allProductContainer = document.getElementById('all-product-list');
-    const productDetailsContainer = document.getElementById('product-details');
-    
-    // Hide the product details container
-    productDetailsContainer.style.display = 'none';
-    // Clear existing products
-    allProductContainer.innerHTML = '';
-    // Show products for the selected category
-    const products = (categoryId === 'all') ? Object.values(productDictionary).flat() : productDictionary[categoryId];
-    // Populate products for the selected category
-    products.forEach((product, index) => {
-        const productItem = document.createElement('div');
-        productItem.classList.add('product-item', 'product-card');
-        productItem.innerHTML = `
+                        'Butt-weld-pro': [{
+                                name: 'Screwed Fitting',
+                                imageUrl: './Images/Fitting Seamless/screwed-fittings.jpg',
+                                buttonText: 'Show Details',
+                                buttonUrl: '/product1-page.html'
+                            },{
+                            name: 'Ferrule Fitting',
+                            imageUrl: './Images/Fitting Seamless/ferrule-fittings.jpg',
+                            buttonText: 'Show Details',
+                            buttonUrl: '/product1-page.html'
+                        },{
+                        name: 'Socket Weld Fitting',
+                        imageUrl: './Images/Fitting Seamless/socket-weld.jpg',
+                        buttonText: 'Show Details',
+                        buttonUrl: '/product1-page.html'
+                    },{
+                    name: 'Forged Fitting',
+                    imageUrl: './Images/Fitting Seamless/stainless-steel-904l-forge-fitting.jpg',
+                    buttonText: 'Show Details',
+                    buttonUrl: '/product1-page.html'
+                },{
+                name: 'Hygienic Pipe Fitting',
+                    imageUrl: './Images/Fitting Seamless/stainless-steel-hygienic-pipe-fittings-wellgreen.jpg',
+                    buttonText: 'Show Details',
+                    buttonUrl: '/product1-page.html'
+                },{
+                name: 'Threaded Fitting',
+                    imageUrl: './Images/Fitting Seamless/threaded fitting.jpg',
+                    buttonText: 'Show Details',
+                    buttonUrl: '/product1-page.html'
+                },
+
+                ],
+
+
+                'Bar&wires-pro': [{
+                        name: 'Bright Bar',
+                        imageUrl: './Images/Bars&Wire/Bright Bar.jpg',
+                        buttonText: 'Show Details',
+                        buttonUrl: 'index.html'
+
+                    },
+                    {
+                        name: 'Hex Bar',
+                        imageUrl: './Images/Bars&Wire/Hex Bar.jpg',
+                        buttonText: 'Show Details',
+                        buttonUrl: 'index.html'
+
+                    },
+                    {
+                        name: 'Square Bar',
+                        imageUrl: './Images/Bars&Wire/Square bar.jpg',
+                        buttonText: 'Show Details',
+                        buttonUrl: 'index.html'
+
+                    },
+                    {
+                        name: 'Round Bar',
+                        imageUrl: './Images/Bars&Wire/ss round bar.jpg',
+                        buttonText: 'Show Details',
+                        buttonUrl: 'index.html'
+
+                    },
+                    {
+                        name: 'Wire Rode',
+                        imageUrl: './Images/Bars&Wire/ss wire rode.jpg',
+                        buttonText: 'Show Details',
+                        buttonUrl: 'index.html'
+
+                    },
+                    {
+                        name: 'Round Bar',
+                        imageUrl: './Images/Bars&Wire/Stainless-Steel-Round-Bars.jpg',
+                        buttonText: 'Show Details',
+                        buttonUrl: 'index.html'
+
+                    },
+                    {
+                        name: 'Wire',
+                        imageUrl: './Images/Bars&Wire/stainless-steel-wire.jpg',
+                        buttonText: 'Show Details',
+                        buttonUrl: 'index.html'
+
+                    },
+                ],
+
+
+                'Fasteners-pro': [{
+                        name: 'Bolt',
+                        imageUrl: './Images/Fasteners/bolts.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/product1-page.html'
+                    }, {
+                        name: 'Nuts',
+                        imageUrl: './Images/Fasteners/nuts.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: 'index.html'
+                    },
+                    {
+                        name: 'Studs',
+                        imageUrl: './Images/Fasteners/Studs.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: 'index.html'
+                    },
+                    {
+                        name: 'Threaded Bar',
+                        imageUrl: './Images/Fasteners/Threaded Bars.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: 'index.html'
+                    },
+                    {
+                        name: 'Washers',
+                        imageUrl: './Images/Fasteners/Washers.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: 'index.html'
+                    },
+                    {
+                        name: 'U-Bolts',
+                        imageUrl: './Images/Fasteners/U-bolts.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: 'index.html'
+                    },
+                    // Add more products as needed
+                ],
+                'Flanges-pro': [{
+                        name: 'Bleed Ring Flange',
+                        imageUrl: './Images/Flanges/Bleed Ring Flange.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productA-page.html'
+                    }, {
+                        name: 'Blind Flanges',
+                        imageUrl: './Images/Flanges/Blind Flange.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Expander Flange',
+                        imageUrl: './Images/Flanges/expander-flange.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Flange Adapter',
+                        imageUrl: './Images/Flanges/Flange Adapter.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Flange Olet',
+                        imageUrl: './Images/Flanges/Flange Olet.png',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Flat Face Flange',
+                        imageUrl: './Images/Flanges/flat-face-flangee.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Forged Flange',
+                        imageUrl: './Images/Flanges/Forged Flange.gif',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Slip on Flanges',
+                        imageUrl: './Images/Flanges/Slip-on Flange.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Weld Neck flanges',
+                        imageUrl: './Images/Flanges/weld-neck-flange.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Spectacle Blind Flanges',
+                        imageUrl: './Images/Flanges/spectacle-blind-206a.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Orifice Flanges',
+                        imageUrl: './Images/Flanges/orifice-flange.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Threaded Flanges',
+                        imageUrl: './Images/Flanges/Threaded_Flange.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Socket Weld Flanges',
+                        imageUrl: './Images/Flanges/socket-weld-flanges.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Plate Flange',
+                        imageUrl: './Images/Flanges/plate-flanges.jpeg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'High Hub Flanges',
+                        imageUrl: './Images/Flanges/high-hub-blind-flanges-supplier.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Groove & Tongue ',
+                        imageUrl: './Images/Flanges/tongue-and-groove-flange-flanges.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Square Flange',
+                        imageUrl: './Images/Flanges/square-flanges.jpeg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Ring Type Joint',
+                        imageUrl: './Images/Flanges/ring-type-joint-flange.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Loose Flange',
+                        imageUrl: './Images/Flanges/loose-flanges.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Nipo Flange',
+                        imageUrl: './Images/Flanges/stainless-steel-nipo-flange.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Lap Joint Flange',
+                        imageUrl: './Images/Flanges/Lap Joint Flange.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Weldo Flange',
+                        imageUrl: './Images/Flanges/Weldo Flange.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Forged Flanges',
+                        imageUrl: './Images/Flanges/Forged Flange.gif',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Raised Flange',
+                        imageUrl: './Images/Flanges/Raised Flange.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Male Female Flange',
+                        imageUrl: './Images/Flanges/Male Female Flange.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Ring Spacers Flange',
+                        imageUrl: './Images/Flanges/Ring Spacers Flange.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Non Standard Flange',
+                        imageUrl: './Images/Flanges/Non Standard Flange.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Spade Flange',
+                        imageUrl: './Images/Flanges/Spade Flange.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Hydraulic SAE',
+                        imageUrl: './Images/Flanges/Hydraulic SAE.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    {
+                        name: 'Opening Flange',
+                        imageUrl: './Images/Flanges/Opening Flange.jpg',
+                        buttonText: 'Read More',
+                        buttonUrl: '/productB-page.html'
+                    },
+                    // Add more products as needed
+                ],
+                // Repeat for other product categories
+                };
+                // Function to display product details when clicked
+                function displayProductDetails(categoryId, productId) {
+                    const productDetailsContainer = document.getElementById('product-details');
+                    const productTitle = document.getElementById('product-title');
+                    const productImage = document.querySelector('.product-image');
+                    const selectedProduct = productDictionary[categoryId][productId];
+                    productTitle.textContent = selectedProduct.name;
+                    productImage.src = selectedProduct.imageUrl;
+                    productDetailsContainer.style.display = 'block';
+                }
+                // Function to show products for a specific category
+                function showCategory(categoryId) {
+                    const allProductContainer = document.getElementById('all-product-list');
+                    const productDetailsContainer = document.getElementById('product-details');
+
+                    // Hide the product details container
+                    productDetailsContainer.style.display = 'none';
+                    // Clear existing products
+                    allProductContainer.innerHTML = '';
+                    // Show products for the selected category
+                    const products = (categoryId === 'all') ? Object.values(productDictionary).flat() : productDictionary[categoryId];
+                    // Populate products for the selected category
+                    products.forEach((product, index) => {
+                        const productItem = document.createElement('div');
+                        productItem.classList.add('product-item', 'product-card');
+                        productItem.innerHTML = `
                     <div class="product-card-header" onclick="displayProductDetails('${categoryId}', ${index})">
         ${product.name}
     </div>
@@ -466,277 +548,281 @@ function showCategory(categoryId) {
         
     
                 `;
-        allProductContainer.appendChild(productItem);
-    });
-    // Show the selected product container
-    allProductContainer.style.display = 'flex';
-}
-// Function to redirect to the product page
-function redirectToProductPage(url) {
-    window.location.href = url;
-}
-// Trigger the initial display of all categories
-showCategory('all');
-                    </script>
-                    <div class="col-lg-3 p-0 m-0 product-item-list">
-                        <div class="heading-product-list">
-                            <h1>
-                                Product List
-                            </h1>
+                        allProductContainer.appendChild(productItem);
+                    });
+                    // Show the selected product container
+                    allProductContainer.style.display = 'flex';
+                }
+                // Function to redirect to the product page
+                function redirectToProductPage(url) {
+                    window.location.href = url;
+                }
+                // Trigger the initial display of all categories
+                showCategory('all');
+                </script>
+                <div class="col-lg-3 p-0 m-0 product-item-list">
+                    <div class="heading-product-list">
+                        <h1>
+                            Product List
+                        </h1>
+                    </div>
+                    <div class="cat-section">
+                        <div class="category-list" id="category1">
+                            <div class="category-header" onclick="toggleCategory('category1')">
+                                Pipes & Tubes
+                                <span class="collapsible-icon">
+                                    +
+                                </span>
+                            </div>
+                            <div class="category-content">
+                                <div class="product-item">
+                                    Welded
+                                </div>
+                                <div class="product-item">
+                                    Seamless
+                                </div>
+                            </div>
                         </div>
-                        <div class="cat-section">
-                            <div class="category-list" id="category1">
-                                <div class="category-header" onclick="toggleCategory('category1')">
-                                    PIPES & TUBES
-                                    <span class="collapsible-icon">
-                                        +
-                                    </span>
+                        <div class="category-list" id="category2">
+                            <div class="category-header" onclick="toggleCategory('category2')">
+                                Flanges
+                                <span class="collapsible-icon">
+                                    +
+                                </span>
+                            </div>
+                            <div class="category-content">
+                                <div class="product-item">
+                                    Slip on Flanges
                                 </div>
-                                <div class="category-content">
-                                    <div class="product-item">
-                                        Welded
-                                    </div>
-                                    <div class="product-item">
-                                        Seamless
-                                    </div>
+                                <div class="product-item">
+                                    Weld Neck flanges
+                                </div>
+                                <div class="product-item">
+                                    Blind Flanges
+                                </div>
+                                <div class="product-item">
+                                    Spectacle Blind Flanges
+                                </div>
+                                <div class="product-item">
+                                    Orifice Flanges
+                                </div>
+                                <div class="product-item">
+                                    Threaded Flanges
+                                </div>
+                                <div class="product-item">
+                                    Socket Weld Flanges
+                                </div>
+                                <div class="product-item">
+                                    Flat Flanges
+                                </div>
+                                <div class="product-item">
+                                    High Hub Flanges
+                                </div>
+                                <div class="product-item">
+                                    Groove and Tongue Flange
+                                </div>
+                                <div class="product-item">
+                                    Square Flange
+                                </div>
+                                <div class="product-item">
+                                    Ring Type Joint Flange
+                                </div>
+                                <div class="product-item">
+                                    Loose Flange
+                                </div>
+                                <div class="product-item">
+                                    Expander Flange
+                                </div>
+                                <div class="product-item">
+                                    Nipo Flange
+                                </div>
+                                <div class="product-item">
+                                    Plate Flange
+                                </div>
+                                <div class="product-item">
+                                    Lap Joint Flange
+                                </div>
+                                <div class="product-item">
+                                    Weldo Flange
+                                </div>
+                                <div class="product-item">
+                                    Flange Olet
+                                </div>
+                                <div class="product-item">
+                                    Bleed Ring Flange
+                                </div>
+                                <div class="product-item">
+                                    Forged Flange
+                                </div>
+                                <div class="product-item">
+                                    Raised Flange
+                                </div>
+                                <div class="product-item">
+                                    Male Female Flange
+                                </div>
+                                <div class="product-item">
+                                    Ring Spacers Flange
+                                </div>
+                                <div class="product-item">
+                                    Flange Adapter
+                                </div>
+                                <div class="product-item">
+                                    Non Standard Flange
+                                </div>
+                                <div class="product-item">
+                                    Spade Flange
+                                </div>
+                                <div class="product-item">
+                                    Hydraulic SAE
+                                </div>
+                                <div class="product-item">
+                                    Opening Flange
                                 </div>
                             </div>
-                            <div class="category-list" id="category2">
-                                <div class="category-header" onclick="toggleCategory('category2')">
-                                    Flanges
-                                    <span class="collapsible-icon">
-                                        +
-                                    </span>
+                        </div>
+                        <div class="category-list" id="category3">
+                            <div class="category-header" onclick="toggleCategory('category3')">
+                                Fittings
+                                <span class="collapsible-icon">
+                                    +
+                                </span>
+                            </div>
+                            <div class="category-content">
+                                <div class="product-item">
+                                    Threaded / Screwed Fittings
                                 </div>
-                                <div class="category-content">
-                                    <div class="product-item">
-                                        Slip on Flanges
-                                    </div>
-                                    <div class="product-item">
-                                        Weld Neck flanges
-                                    </div>
-                                    <div class="product-item">
-                                        Blind Flanges
-                                    </div>
-                                    <div class="product-item">
-                                        Spectacle Blind Flanges
-                                    </div>
-                                    <div class="product-item">
-                                        Orifice Flanges
-                                    </div>
-                                    <div class="product-item">
-                                        Threaded Flanges
-                                    </div>
-                                    <div class="product-item">
-                                        Socket Weld Flanges
-                                    </div>
-                                    <div class="product-item">
-                                        Flat Flanges
-                                    </div>
-                                    <div class="product-item">
-                                        High Hub Flanges
-                                    </div>
-                                    <div class="product-item">
-                                        Groove and Tongue Flange
-                                    </div>
-                                    <div class="product-item">
-                                        Square Flange
-                                    </div>
-                                    <div class="product-item">
-                                        Ring Type Joint Flange
-                                    </div>
-                                    <div class="product-item">
-                                        Loose Flange
-                                    </div>
-                                    <div class="product-item">
-                                        Expander Flange
-                                    </div>
-                                    <div class="product-item">
-                                        Nipo Flange
-                                    </div>
-                                    <div class="product-item">
-                                        Plate Flange
-                                    </div>
-                                    <div class="product-item">
-                                        Lap Joint Flange
-                                    </div>
-                                    <div class="product-item">
-                                        Weldo Flange
-                                    </div>
-                                    <div class="product-item">
-                                        Flange Olet
-                                    </div>
-                                    <div class="product-item">
-                                        Bleed Ring Flange
-                                    </div>
-                                    <div class="product-item">
-                                        Forged Flange
-                                    </div>
-                                    <div class="product-item">
-                                        Raised Flange
-                                    </div>
-                                    <div class="product-item">
-                                        Male Female Flange
-                                    </div>
-                                    <div class="product-item">
-                                        Ring Spacers Flange
-                                    </div>
-                                    <div class="product-item">
-                                        Flange Adapter
-                                    </div>
-                                    <div class="product-item">
-                                        Non Standard Flange
-                                    </div>
-                                    <div class="product-item">
-                                        Spade Flange
-                                    </div>
-                                    <div class="product-item">
-                                        Hydraulic SAE
-                                    </div>
-                                    <div class="product-item">
-                                        Opening Flange
-                                    </div>
+                                <div class="product-item">
+                                    Fittings (Forged)
+                                </div>
+                                <div class="product-item">
+                                    Butt-weld Fitting
+                                </div>
+                                <div class="product-item">
+                                    Ferrule Tube Fittings
+                                </div>
+                                <div class="product-item">
+                                    Hygienic/Food Grade Fittings
+                                </div>
+                                <div class="product-item">
+                                    Socket-weld Fittings
                                 </div>
                             </div>
-                            <div class="category-list" id="category3">
-                                <div class="category-header" onclick="toggleCategory('category3')">
-                                    Butt-weld Fittings
-                                    <span class="collapsible-icon">
-                                        +
-                                    </span>
+                        </div>
+                        <div class="category-list" id="category4">
+                            <div class="category-header" onclick="toggleCategory('category4')">
+                                Bars & Wires
+                                <span class="collapsible-icon">
+                                    +
+                                </span>
+                            </div>
+                            <div class="category-content">
+                                <div class="product-item">
+                                    Angel
                                 </div>
-                                <div class="category-content">
-                                    <div class="product-item">
-                                        Threaded / Screwed Fittings
-                                    </div>
-                                    <div class="product-item">
-                                        Fittings (Forged)
-                                    </div>
-                                    <div class="product-item">
-                                        Ferrule Tube Fittings
-                                    </div>
-                                    <div class="product-item">
-                                        Hygienic/Food Grade Fittings
-                                    </div>
-                                    <div class="product-item">
-                                        Socket-weld Fittings
-                                    </div>
+                                <div class="product-item">
+                                    Channel
+                                </div>
+                                <div class="product-item">
+                                    Flat Bars
+                                </div>
+                                <div class="product-item">
+                                    Square Bars
+                                </div>
+                                <div class="product-item">
+                                    Wires-straight Wires-coil
+                                </div>
+                                <div class="product-item">
+                                    Hexagonal Bars
+                                </div>
+                                <div class="product-item">
+                                    Round Bars
+                                </div>
+                                <div class="product-item">
+                                    Wire
                                 </div>
                             </div>
-                            <div class="category-list" id="category4">
-                                <div class="category-header" onclick="toggleCategory('category4')">
-                                    BARS & WIRES
-                                    <span class="collapsible-icon">
-                                        +
-                                    </span>
+                        </div>
+                        <div class="category-list" id="category5">
+                            <div class="category-header" onclick="toggleCategory('category5')">
+                                Fasteners
+                                <span class="collapsible-icon">
+                                    +
+                                </span>
+                            </div>
+                            <div class="category-content">
+                                <div class="product-item">
+                                    Bolt
                                 </div>
-                                <div class="category-content">
-                                    <div class="product-item">
-                                        Angel
-                                    </div>
-                                    <div class="product-item">
-                                        Channel
-                                    </div>
-                                    <div class="product-item">
-                                        Flat Bars
-                                    </div>
-                                    <div class="product-item">
-                                        Square Bars
-                                    </div>
-                                    <div class="product-item">
-                                        Wires-straight Wires-coil
-                                    </div>
-                                    <div class="product-item">
-                                        Hexagonal Bars
-                                    </div>
-                                    <div class="product-item">
-                                        Round Bars
-                                    </div>
-                                    <div class="product-item">
-                                        Wire
-                                    </div>
+                                <div class="product-item">
+                                    Nuts
+                                </div>
+                                <div class="product-item">
+                                    Washers
+                                </div>
+                                <div class="product-item">
+                                    Studs
+                                </div>
+                                <div class="product-item">
+                                    Threaded Bars
+                                </div>
+                                <div class="product-item">
+                                    U-bolts
                                 </div>
                             </div>
-                            <div class="category-list" id="category5">
-                                <div class="category-header" onclick="toggleCategory('category5')">
-                                    FASTENERS
-                                    <span class="collapsible-icon">
-                                        +
-                                    </span>
-                                </div>
-                                <div class="category-content">
-                                    <div class="product-item">
-                                        Bolt
-                                    </div>
-                                    <div class="product-item">
-                                        Nuts
-                                    </div>
-                                    <div class="product-item">
-                                        Washers
-                                    </div>
-                                    <div class="product-item">
-                                        Studs
-                                    </div>
-                                    <div class="product-item">
-                                        Threaded Bars
-                                    </div>
-                                    <div class="product-item">
-                                        U-bolts
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="category-list" id="category6">
+                            <div class="category-header" onclick="toggleCategory('category6')">
+                                Structural Products
+                                <span class="collapsible-icon">
+                                    +
+                                </span>
                             </div>
-                            <div class="category-list" id="category6">
-                                <div class="category-header" onclick="toggleCategory('category6')">
-                                    Structural Products
-                                    <span class="collapsible-icon">
-                                        +
-                                    </span>
+                            <div class="category-content">
+                                <div class="product-item">
+                                    Beam
                                 </div>
-                                <div class="category-content">
-                                    <div class="product-item">
-                                        Beam
-                                    </div>
-                                    <div class="product-item">
-                                        Hollow section
-                                    </div>
-                                    <div class="product-item">
-                                        Angle
-                                    </div>
-                                    <div class="product-item">
-                                        Flat
-                                    </div>
-                                    <div class="product-item">
-                                        Pipe
-                                    </div>
-                                    <div class="product-item">
-                                        Europe profile (beam)
-                                    </div>
-                                    <div class="product-item">
-                                        Plate
-                                    </div>
+                                <div class="product-item">
+                                    Hollow section
+                                </div>
+                                <div class="product-item">
+                                    Angle
+                                </div>
+                                <div class="product-item">
+                                    Flat
+                                </div>
+                                <div class="product-item">
+                                    Pipe
+                                </div>
+                                <div class="product-item">
+                                    Europe profile (beam)
+                                </div>
+                                <div class="product-item">
+                                    Plate
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <script>
-                        // JavaScript to toggle the category content (expand/collapse)
-                    function toggleCategory(categoryId) {
-                        var categoryContent = document.getElementById(categoryId).getElementsByClassName("category-content")[0];
-                        var collapsibleIcon = document.getElementById(categoryId).getElementsByClassName("collapsible-icon")[0];
-
-                        if (categoryContent.style.display === "block") {
-                            categoryContent.style.display = "none";
-                            collapsibleIcon.textContent = "+";
-                        } else {
-                            categoryContent.style.display = "block";
-                            collapsibleIcon.textContent = "-";
-                        }
-                    }
-                    </script>
                 </div>
+                <script>
+                // JavaScript to toggle the category content (expand/collapse)
+                function toggleCategory(categoryId) {
+                    var categoryContent = document.getElementById(categoryId).getElementsByClassName("category-content")[0];
+                    var collapsibleIcon = document.getElementById(categoryId).getElementsByClassName("collapsible-icon")[0];
+
+                    if (categoryContent.style.display === "block") {
+                        categoryContent.style.display = "none";
+                        collapsibleIcon.textContent = "+";
+                    } else {
+                        categoryContent.style.display = "block";
+                        collapsibleIcon.textContent = "-";
+                    }
+                }
+                </script>
             </div>
-        </section>
-    </body>
+        </div>
+    </section>
+</body>
+
 </html>
 <!-- Product Details 
 <section id="pro-3">
@@ -805,8 +891,8 @@ showCategory('all');
                 <div class="contain-text">
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur aperiam perferendis
-                            deleniti quo deserunt labore, maxime eius veritatis ex aliquam iure ipsum? Doloremque facere
-                            eveniet fugit asperiores culpa officia et.
+                        deleniti quo deserunt labore, maxime eius veritatis ex aliquam iure ipsum? Doloremque facere
+                        eveniet fugit asperiores culpa officia et.
                     </p>
                 </div>
             </div>
@@ -912,21 +998,21 @@ showCategory('all');
                     </label>
                     <p>
                         Office No D-12, 1St Floor, 331/333 Fatimabai Building, Maulana Azad Road, Goldeval, Mumbai –
-                            400004. Maharashtra, India.
+                        400004. Maharashtra, India.
                     </p>
                 </div>
             </div>
         </div>
     </div>
     <hr style="color: rgb(255, 255, 255); position: relative; opacity: 1;">
-        <div class="container text-center">
-            <p>
-                © 2024 Varcas Stainless. All rights reserved | Design By
-                <a href="#">
-                    Branded System
-                </a>
-            </p>
-        </div>
+    <div class="container text-center">
+        <p>
+            © 2024 Varcas Stainless. All rights reserved | Design By
+            <a href="#">
+                Branded System
+            </a>
+        </p>
+    </div>
     </hr>
 </footer>
 <!-- Bootstrap JS (make sure to include it) -->
