@@ -31,15 +31,15 @@ body {
     position: relative;
 }
 .heading h1::before {
-    content: ' ';
+    content: '';
     position: absolute;
     bottom: 0;
-    left: 5;
-    width: 75%;
+    left: 10px;
+    width: 100%;
     height: 4px;
-    background-color: #25a989;
-}
-.heading p {
+    background-color: #25a989;    
+    display: inline-block; /* Make sure the pseudo-element is a block-level element */
+}.heading p {
     padding: 10px;
     line-height: normal;
     text-align: start;
@@ -65,7 +65,7 @@ body {
 .product-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     padding: 10px;
 }
@@ -89,9 +89,9 @@ body {
 .item-intro-text h2::before {
     content: '';
     position: absolute;
-    width: 37%;
-    bottom: 0;
-    height: 3px;
+    width: 75%;
+    bottom: 0;    
+    height: 5px;
     background-color: #25a989;
 }
 .item-intro-text p {
@@ -147,9 +147,10 @@ body {
 .item-Advantages h2::before {
     content: '';
     position: absolute;
-    width: 37%;
+    width: 100%;
     bottom: 0;
-    height: 3px;
+    left:0;
+    height: 5px;
     background-color: #25a989;
 }
 ..item-design p, 

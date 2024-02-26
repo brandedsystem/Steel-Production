@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    /* Adjusted for the fixed navbar height */
+    scroll-behavior: smooth;
+    font-family: "Cambria", "Cochin", "Georgia", "Times", "Times New Roman",
+        "serif";
+}
+
+#material-menu-bar {
+    background-color: #2185a0;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu-bar-material {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 10px;
+}
+
+.menu-bar-material ul {
+    display: flex;
+    list-style: none;
+    position: relative;
+    padding-top: 10px;
+
+}
+
+.menu-bar-material ul>li {
+    margin-right: 20px;
+}
+
+.menu-bar-material ul>li>a {
+    color: white;
+    font-size: 16px;
+    padding: 15px;
+    text-decoration: none;
+
+}
+
+.menu-bar-material ul>li>a:hover {
+    color: white;
+    background-color: #25a989;
+    border-radius: 10px;
+
+}
+
+/* Main Contain */
+
+
+.section {
+  padding-top: 100px;
+}
