@@ -199,79 +199,7 @@
             </div>
         </div>
     </section>
-    <section id="dim-size">
-        <div class="container mt-5">
-            <h2 class="mb-4">Slip-On Flange Dimensions</h2>
-            <table class="table table-bordered table-responsive">
-                <thead>
-                    <tr>
-                        <th>Nominal Pipe Size (NPS)</th>
-                        <th>Outside Diameter (OD)</th>
-                        <th>Raised Face Diameter (RFD)</th>
-                        <th>Thickness (T)</th>
-                        <th>Length Through Hub (LTH)</th>
-                        <th>Hub Diameter (HD)</th>
-                        <th>Welding Neck Length (WNL)</th>
-                    </tr>
-                </thead>
-                <tbody id="flangeTableBody">
-                    <!-- Table rows will be dynamically generated here -->
-                </tbody>
-            </table>
-        </div>
-        <script>
-        // Sample data for slip-on flange dimensions
-        const flangeData = [
-            { nps: "1/2", od: "3.50", rfd: "1.38", t: "0.44", lth: "1.25", hd: "1.19", wnl: "-" },
-            { nps: "3/4", od: "3.88", rfd: "1.69", t: "0.50", lth: "1.50", hd: "1.50", wnl: "-" },
-            { nps: "1", od: "4.25", rfd: "2.00", t: "0.50", lth: "1.88", hd: "1.88", wnl: "-" },
-            { nps: "1 1/4", od: "4.62", rfd: "2.38", t: "0.56", lth: "2.12", hd: "2.25", wnl: "-" },
-            { nps: "1 1/2", od: "5.00", rfd: "2.75", t: "0.56", lth: "2.38", hd: "2.62", wnl: "-" },
-            { nps: "2", od: "6.00", rfd: "3.12", t: "0.63", lth: "2.62", hd: "2.88", wnl: "-" },
-            { nps: "2 1/2", od: "7.00", rfd: "3.88", t: "0.75", lth: "2.88", hd: "3.50", wnl: "-" },
-            { nps: "3", od: "7.50", rfd: "4.62", t: "0.88", lth: "3.12", hd: "4.12", wnl: "-" },
-            { nps: "4", od: "9.00", rfd: "5.38", t: "0.88", lth: "3.38", hd: "5.25", wnl: "-" },
-            { nps: "5", od: "10.00", rfd: "6.00", t: "1.00", lth: "3.62", hd: "6.00", wnl: "-" },
-            { nps: "6", od: "11.00", rfd: "6.75", t: "1.00", lth: "3.88", hd: "6.75", wnl: "-" },
-            { nps: "8", od: "13.50", rfd: "8.50", t: "1.13", lth: "4.38", hd: "7.50", wnl: "-" },
-            { nps: "10", od: "16.00", rfd: "10.12", t: "1.25", lth: "4.88", hd: "9.00", wnl: "-" },
-            { nps: "12", od: "18.00", rfd: "11.75", t: "1.38", lth: "5.38", hd: "10.75", wnl: "-" },
-            { nps: "14", od: "20.00", rfd: "13.25", t: "1.50", lth: "6.00", hd: "12.50", wnl: "-" },
-            { nps: "16", od: "22.00", rfd: "15.00", t: "1.63", lth: "6.50", hd: "14.25", wnl: "-" },
-            { nps: "18", od: "24.00", rfd: "16.75", t: "1.75", lth: "7.00", hd: "16.00", wnl: "-" },
-            { nps: "20", od: "26.00", rfd: "18.50", t: "1.88", lth: "7.50", hd: "17.75", wnl: "-" },
-            { nps: "24", od: "30.00", rfd: "22.00", t: "2.00", lth: "8.75", hd: "21.25", wnl: "-" },
-            { nps: "30", od: "36.00", rfd: "27.25", t: "2.25", lth: "10.25", hd: "26.25", wnl: "-" },
-            { nps: "36", od: "42.00", rfd: "32.50", t: "2.50", lth: "11.75", hd: "31.25", wnl: "-" },
-            // Add more data as needed
-        ];
 
-        // Function to generate table rows dynamically
-        function generateTableRows() {
-            const tableBody = document.getElementById("flangeTableBody");
-
-            flangeData.forEach(data => {
-                const row = document.createElement("tr");
-                row.innerHTML = `
-        <td>${data.nps}</td>
-        <td>${data.od}</td>
-        <td>${data.rfd}</td>
-        <td>${data.t}</td>
-        <td>${data.lth}</td>
-        <td>${data.hd}</td>
-        <td>${data.wnl}</td>
-      `;
-                tableBody.appendChild(row);
-            });
-        }
-
-        // Call the function to generate table rows on page load
-        window.onload = generateTableRows;
-        </script>
-    </section>
-</body>
-
-</html>
 <!-- Fixed Footer -->
 <footer id="footer">
     <div class="container-fluid">
