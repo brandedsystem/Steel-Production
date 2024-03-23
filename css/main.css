@@ -2,6 +2,7 @@
     padding: 0;
     box-sizing: border-box;
     margin: 0;
+    letter-spacing: 1px;
 }
 body {
     /* Adjusted for the fixed navbar height */
@@ -46,6 +47,7 @@ body {
 }
 .navbar-nav .nav-item {
     margin-right: 20px;
+    letter-spacing: 1px;
 }
 .navbar-nav .nav-link {
     /* Navbar link color */
@@ -175,16 +177,21 @@ body {
     padding: 50px 0;
     background-color: #2185a0;
     color: white;
-    position: relative;
-    z-index: 1;
+    position: relative;    
+    letter-spacing:1px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .heading-text .lead {
     font-size: 18px;
     line-height: 1.5;
-    color: white;
-    /* Set your desired text color */
+    color: white;  
+
 }
+
+
+
 /* Desktop Product  */
 
 .heading-product-master {
@@ -437,11 +444,19 @@ body {
     width: 100%;
     font-style: italic;
     position: relative;
+    letter-spacing: 1px;
 }
 .heading-footer {
     font-weight: bold;
     border-bottom: #01ffc1 2px solid;
     margin-bottom: 10px;
+}
+
+.contain-text {
+    position: relative;
+    letter-spacing: 1px;
+    text-align: justify;
+    padding: 10px;
 }
 .footer-list {
     list-style-type: none;
