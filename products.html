@@ -72,9 +72,9 @@
     <section id="products">
         <div class="container-fluid p-0 m-0 product-section1">
             <div class="row p-0 m-0">
-                <div class="col-lg-9 p-0 m-0 product-item-details">
+                <div class="col-lg-12 p-0 m-0 product-item-details">
                     <div class="row cateory">
-                        <div class="row category">
+                     <div class="row category">
                             <ul>
                                 <li>
                                     <button class="btn-nav" data-category="all" onclick="showCategory('all')">
@@ -107,14 +107,14 @@
                                     </button>
                                 </li>
                                 <li>
-                                    <button class="btn-nav" data-category="Structural-Products" onclick="showCategory('Structural-Products')">
-                                        Structural Products
+                                    <button class="btn-nav" data-category="Customised-Fabrication" onclick="showCategory('Customised-Fabrication')">
+                                        Customised Fabrication
                                     </button>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="product-item-list-contain" id="cardContainer">
+                    <div class="product-item-list-contain p-3" id="cardContainer">
                         <div class="products-all" id="all-product-list">
                         </div>
                         <!-- Placeholder for product details -->
@@ -132,12 +132,7 @@
                 </div>
                 <script>
                 const productDictionary = {
-                    'pipe-tube-pro': [{
-                            name: 'Welded',
-                            imageUrl: './Images/Pipe&Tube/welded2.jpg',
-                            buttonText: 'Show Details',
-                            buttonUrl: '/product1-page.html'
-                        }, {
+                    'pipe-tube-pro': [ {
                             name: 'Welded Pipe',
                             imageUrl: './Images/Pipe&Tube/welded-pipes1.jpg',
                             buttonText: 'Show Details',
@@ -158,7 +153,7 @@
                         // Add more products as needed
                     ],
 
-                    'Structural-Products': [{
+                    'Customised-Fabrication': [{
                             name: 'Flat',
                             imageUrl: './Images/Structural product/stainless-steel-flat.jpg',
                             buttonText: 'Show Details',
@@ -169,12 +164,7 @@
                             buttonText: 'Show Details',
                             buttonUrl: 'index.html'
                         },
-                        {
-                            name: 'Plates',
-                            imageUrl: './Images/Structural product/plate.jpg',
-                            buttonText: 'Show Details',
-                            buttonUrl: 'index.html'
-                        },
+                        
                         {
                             name: 'Hollow',
                             imageUrl: './Images/Structural product/Hollow-Steel-Pipe.jpg',
@@ -331,7 +321,7 @@
                             name: 'Bleed Ring Flange',
                             imageUrl: './Images/Flanges/Bleed Ring Flange.jpg',
                             buttonText: 'Read More',
-                            buttonUrl: '/productA-page.html'
+                            buttonUrl: ''
                         }, {
                             name: 'Blind Flanges',
                             imageUrl: './Images/Flanges/Blind Flange.jpg',
@@ -372,7 +362,7 @@
                             name: 'Slip on Flanges',
                             imageUrl: './Images/Flanges/Slip-on Flange.jpg',
                             buttonText: 'Read More',
-                            buttonUrl: '/productB-page.html'
+                            buttonUrl: './Product temp/Slip-on Flanges.html'
                         },
                         {
                             name: 'Weld Neck flanges',
@@ -560,7 +550,7 @@
                 // Trigger the initial display of all categories
                 showCategory('all');
                 </script>
-                <div class="col-lg-3 p-0 m-0 product-item-list">
+          <!--      <div class="col-lg-3 p-0 m-0 product-item-list">
                     <div class="heading-product-list">
                         <h1>
                             Product List
@@ -818,7 +808,7 @@
                     }
                 }
                 </script>
-            </div>
+            </div>-->
         </div>
     </section>
     <!-- Product Details 

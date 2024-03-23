@@ -23,7 +23,7 @@ body {
 /* Product list navbar */
 
 .product-item-details {
-    border-right: 5px solid black;
+    position: relative;
 }
 .category {
     display: block;
