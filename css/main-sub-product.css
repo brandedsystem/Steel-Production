@@ -124,8 +124,10 @@ body {
     margin: 0;
     padding: 0;
     margin-top: 10px;
-  /*  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    background-color: #2185a0;
+    margin-bottom: 30px;
+    background-color: #e9eef061;
+
+   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);    
     position: relative;
     color: white;
     cursor: pointer;  */
@@ -177,9 +179,10 @@ body {
     padding-bottom: 10px;
     font-size: 32px;
     position: relative;
+    border-bottom: 5px solid #25a989;
 }
 
-
+/*
 .item-design h2::before,
 .item-type h2::before,
 .item-Installation h2::before,
@@ -206,7 +209,7 @@ body {
     height: 5px;
     background-color: #25a989;
 }
-
+*/
 .item-design p,
 .item-type p,
 .item-Installation p,
@@ -226,6 +229,7 @@ body {
 .item-Use-Case p,
 .item-Advantages p {
     padding: 10px;
+
 }
 
 .item-design:hover,
