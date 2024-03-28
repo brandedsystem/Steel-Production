@@ -3,10 +3,12 @@
     box-sizing: border-box;
     margin: 0;
 }
+
 body {
     scroll-behavior: smooth;
     font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif' !important;
 }
+
 /* Heading section */
 
 #Contain-product {
@@ -14,15 +16,18 @@ body {
     margin: 0;
     position: relative;
 }
+
 .heading-contain {
     background-color: #2185a0;
-    color: white;
+    color: white; 
     position: relative;
 }
+
 .heading {
     position: relative;
     display: inline-block;
 }
+
 .heading h1 {
     padding: 10px;
     line-height: normal;
@@ -30,6 +35,7 @@ body {
     font-size: 32px;
     position: relative;
 }
+
 .heading h1::before {
     content: '';
     position: absolute;
@@ -37,24 +43,29 @@ body {
     left: 10px;
     width: 100%;
     height: 4px;
-    background-color: #25a989;    
-    display: inline-block; /* Make sure the pseudo-element is a block-level element */
-}.heading p {
+    background-color: #25a989;
+    display: inline-block;
+    /* Make sure the pseudo-element is a block-level element */
+}
+
+.heading p {
     padding: 10px;
     line-height: normal;
     text-align: start;
     font-size: 18px;
     padding-bottom: 10px;
 }
+
 /* Intro Section */
 
-.intro-contain {
+.intro-contain1 {
     padding: 0;
-    margin-top: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    background-color: none;
+    margin-top: 10px; 
     position: relative;
+    background-color: #e9eef061;
+
 }
+
 .product-image {
     width: 100%;
     height: 400px;
@@ -62,6 +73,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
 }
+
 .product-image img {
     width: 100%;
     height: 100%;
@@ -69,36 +81,43 @@ body {
     object-position: center;
     padding: 10px;
 }
+
 /* Center the text within the item-intro */
 
 .item-intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
+
 /* Center the text inside the item-intro-text */
 
 .item-intro-text {
     text-align: center;
 }
+
 .item-intro-text h2 {
     font-size: 32px;
     padding: 10px;
     position: relative;
 }
+
 .item-intro-text h2::before {
     content: '';
     position: absolute;
     width: 75%;
-    bottom: 0;    
+    bottom: 0;
     height: 5px;
     background-color: #25a989;
 }
+
 .item-intro-text p {
     font-size: 16px;
     padding: 10px;
     text-align: justify;
 }
+
 /* main contain (product details ) */
 
 .main-contain {
@@ -106,72 +125,134 @@ body {
     margin: 0;
     padding: 0;
     margin-top: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    background-color: #2185a0;
+    margin-bottom: 30px;
+    background-color: #e9eef061;
+
+   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);    
     position: relative;
     color: white;
-    cursor: pointer;
+    cursor: pointer;  */
 }
+
 .item-design,
-.item-type, 
-.item-Installation, 
-.item-Pressure-Ratings, 
-.item-Material-Selection, 
-.item-Testing, 
-.item-Use-Case, 
+.item-type,
+.item-Installation,
+.item-Pressure-Ratings,
+.item-Material-Selection,
+.item-Testing,
+.item-benefits,
+.item-properties,
+.item-finishing,
+.item-material,
+.item-applications,
+.item-Properties,
+.item-maintenance,
+.item-Quality,
+.item-Load-Bearing-Capacity,
+.item-safety,
+.item-Use-Case,
 .item-Advantages {
     margin-top: 10px;
     padding: 20px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform .4s ease-in-out;
+    cursor: pointer;
 }
-.item-design h2, 
+
+.item-design h2,
 .item-type h2,
-.item-Installation h2, 
-.item-Pressure-Ratings h2, 
-.item-Material-Selection h2, 
-.item-Testing h2, 
-.item-Use-Case h2, 
+.item-Installation h2,
+.item-Pressure-Ratings h2,
+.item-Material-Selection h2,
+.item-Testing h2,
+.item-properties h2,
+.item-finishing h2,
+.item-Properties h2,
+.item-benefits h2,
+.item-Quality h2,
+.item-material h2,
+.item-maintenance h2,
+.item-Load-Bearing-Capacity h2,
+.item-safety h2,
+.item-applications h2,
+.item-Use-Case h2,
 .item-Advantages h2 {
     margin-bottom: 10px;
-    padding-bottom:10px;
+    padding-bottom: 10px;
     font-size: 32px;
     position: relative;
+    border-bottom: 5px solid #25a989;
 }
-.item-design h2::before, 
+
+/*
+.item-design h2::before,
 .item-type h2::before,
-.item-Installation h2::before, 
-.item-Pressure-Ratings h2::before, 
-.item-Material-Selection h2::before, 
-.item-Testing h2::before, 
-.item-Use-Case h2::before, 
+.item-Installation h2::before,
+.item-Pressure-Ratings h2::before,
+.item-Material-Selection h2::before,
+.item-material h2::before,
+.item-properties h2::before,
+.item-finishing h2::before,
+.item-benefits h2::before,
+.item-applications h2::before,
+.item-Quality h2::before,
+.item-maintenance h2::before,
+.item-safety h2::before,
+.item-Load-Bearing-Capacity: h2::before,
+.item-Properties h2::before,
+.item-Testing h2::before,
+.item-Use-Case h2::before,
 .item-Advantages h2::before {
     content: '';
     position: absolute;
     width: 100%;
     bottom: 0;
-    left:0;
+    left: 0;
     height: 5px;
     background-color: #25a989;
 }
-..item-design p, 
+*/
+.item-design p,
 .item-type p,
-.item-Installation p, 
-.item-Pressure-Ratings p, 
-.item-Material-Selection p, 
-.item-Testing p, 
-.item-Use-Case p, 
+.item-Installation p,
+.item-Pressure-Ratings p,
+.item-Material-Selection p,
+.item-Testing p,
+.item-properties p,
+.item-Quality p,
+.item-finishing p,
+.item-benefits p,
+.item-material p,
+.item-maintenance p,
+.item-safety p,
+.item-applications p,
+.item-Load-Bearing-Capacity p,
+.item-Properties p,
+.item-Use-Case p,
 .item-Advantages p {
     padding: 10px;
+
 }
-.item-design:hover, 
+
+.item-design:hover,
 .item-type:hover,
-.item-Installation:hover, 
-.item-Pressure-Ratings:hover, 
-.item-Material-Selection:hover, 
-.item-Testing:hover, 
-.item-Use-Case:hover, 
+.item-Installation:hover,
+.item-Pressure-Ratings:hover,
+.item-Material-Selection:hover,
+.item-properties:hover,
+.item-Load-Bearing-Capacity:hover,
+.item-finishing:hover,
+.item-Testing:hover,
+.item-Quality:hover,
+.item-benefits:hover,
+.item-maintenance:hover,
+.item-safety:hover,
+.item-Properties:hover,
+.item-Use-Case:hover,
+.item-applications:hover,
+.item-material:hover,
 .item-Advantages:hover {
-    background-color: #25a989;
+    background-color: #2185a0;
     color: white;
-   transform: skew(1deg, 1deg) scale(1.1);
+    #transform: skew(0.5deg, 0.5deg) scale(1.1);
+
 }
