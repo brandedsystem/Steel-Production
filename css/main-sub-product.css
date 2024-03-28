@@ -58,12 +58,12 @@ body {
 
 /* Intro Section */
 
-.intro-contain {
+.intro-contain1 {
     padding: 0;
-    margin-top: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); 
-    background-color: none;
+    margin-top: 10px; 
     position: relative;
+    background-color: #e9eef061;
+
 }
 
 .product-image {
@@ -88,6 +88,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 /* Center the text inside the item-intro-text */
