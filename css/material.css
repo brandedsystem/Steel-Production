@@ -111,6 +111,9 @@ body {
 }
 
 /* Composation Property */
+
+
+
 .m-types {
     color: white;
     background-color: #2185a0;
@@ -161,4 +164,34 @@ body {
     object-fit: contain;
     object-position: center;
 
+}
+
+/* Types of stainless */
+
+.m-types-dim {
+
+}
+.sub-part {
+    background-color: #e9eef061;
+    margin: 0;
+}
+
+.types-heading {
+    position: relative;
+    cursor: pointer;
+    color: white;
+    background-color: #2185a0;
+}
+
+.type-heading h2 {
+    padding: 10px;
+    border-bottom: 3px solid #01ffc1;
+}
+
+.sub-heading {
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #01ffc1;
 }
