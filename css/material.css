@@ -112,7 +112,11 @@ body {
 
 /* Composation Property */
 
-
+.appli-stainless {
+    background-color: #e9eef061;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
 
 .m-types {
     padding: 10px;
@@ -120,8 +124,10 @@ body {
 
 .material-types {
     text-align: justify;
-    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
     margin: 0;
+    background-color: #e9eef061;
 
 }
 
@@ -165,6 +171,15 @@ body {
 }
 
 /* Types of stainless */
+
+.sub-part {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    background-color: #e9eef061;
+    margin-bottom: 20px;
+}
+
 
 .m-types-dim {
     position: relative;
