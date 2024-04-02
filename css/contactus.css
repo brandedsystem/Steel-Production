@@ -24,7 +24,9 @@ body {
 .container-section {
     border-radius: 20px;    
     border-radius: 10px;
-    padding: 40px;
+    padding: 20px;
+    background-color: #e9eef061;
+    margin-top: 20px;
 }
 
 .con-contain {
