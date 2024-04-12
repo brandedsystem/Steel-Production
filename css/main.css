@@ -495,3 +495,8 @@ body {
     object-position: center;
     position: relative;
 }
+
+.BS-contain {
+    color: #01ffc1;
+    text-decoration: none;
+}
